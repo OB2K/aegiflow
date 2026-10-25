@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Bloqueo contra Dark Reader y extensiones de alteración cromática -->
+  <meta name="darkreader-lock" />
+  <meta name="color-scheme" content="dark only" />
+  <meta name="theme-color" content="#01030A" />
+
+  <!-- Robots: No indexar la página 404 -->
+  <meta name="robots" content="noindex, follow" />
+
+  <title>404 — Page introuvable | AEGIFLOW</title>
+
+  <!-- Favicon Vectorial SVG Oficial -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #01030A;
+      color: #E2E8F0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Fondo ambiental sutil */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: clamp(280px, 60vw, 500px);
+      height: clamp(280px, 60vw, 500px);
+      background: radial-gradient(circle, rgba(0, 240, 255, 0.08) 0%, rgba(1, 3, 10, 0) 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .error-container {
+      position: relative;
+      z-index: 1;
+      max-width: 520px;
+      width: 100%;
+      background: rgba(6, 11, 25, 0.75);
+      border: 1px solid rgba(0, 240, 255, 0.24);
+      border-radius: 1.25rem;
+      padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 240, 255, 0.08);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 1.25rem;
+      filter: drop-shadow(0 0 12px rgba(0, 240, 255, 0.5));
+    }
+
+    .error-code {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(3.5rem, 12vw, 5.5rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #FFFFFF 30%, #00F0FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.75rem;
+      text-shadow: 0 0 30px rgba(0, 240, 255, 0.35);
+    }
+
+    .error-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.15rem, 4vw, 1.45rem);
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 0.75rem;
+    }
+
+    .error-desc {
+      font-size: 0.92rem;
+      color: #94A3B8;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .btn-return {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: #00F0FF;
+      color: #01030A;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 0.8rem 1.6rem;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+      transition: all 0.22s ease;
+    }
+
+    .btn-return:hover {
+      background: #47F5FF;
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.65);
+      transform: translateY(-2px);
+    }
+
+    .footer-note {
+      margin-top: 1.75rem;
+      font-size: 0.75rem;
+      color: #64748B;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-container">
+    <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M50 8 L84 24 V54 C84 74 50 92 50 92 C50 92 16 74 16 54 V24 L50 8 Z" stroke="#00F0FF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M32 76 L50 26 L68 76" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M35 52 C12 36, 12 72, 36 58 L64 46 C88 34, 88 68, 65 54" stroke="#00F0FF" stroke-width="4.5" stroke-linecap="round" />
+      <circle cx="50" cy="52" r="5.5" fill="#FFFFFF" />
+    </svg>
+
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page introuvable</h1>
+    <p class="error-desc">
+      La ressource demandée n'existe pas ou a été déplacée vers une nouvelle architecture sécurisée.
+    </p>
+
+    <a href="/" class="btn-return">
+      <span>Retour à l'accueil</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+
+    <div class="footer-note">AEGIFLOW · Security by Design</div>
+  </div>
+</body>
+
+</html>

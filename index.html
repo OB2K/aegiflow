@@ -1,0 +1,3004 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Bloqueo estricto contra Dark Reader y extensiones de alteración cromática -->
+  <meta name="darkreader-lock" />
+  <meta name="color-scheme" content="dark only" />
+  <meta name="theme-color" content="#01030A" />
+
+  <title>AEGIFLOW | IA sur mesure, Automatisation, Security by Design</title>
+  <meta name="description"
+    content="Automatisez avec l'IA sur mesure tout en sécurisant vos données : agents IA & LLMs, automatisation de processus et Security by Design." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Ousmane Barry — AEGIFLOW" />
+
+  <!-- Canonical, LLMs Context & Hreflang Multilingüe SEO -->
+  <link rel="canonical" href="https://www.aegiflow.eu/" />
+  <link rel="llms" type="text/plain" href="https://www.aegiflow.eu/llms.txt" />
+  <link rel="alternate" hreflang="fr" href="https://www.aegiflow.eu/?lang=fr" />
+  <link rel="alternate" hreflang="en" href="https://www.aegiflow.eu/?lang=en" />
+  <link rel="alternate" hreflang="es" href="https://www.aegiflow.eu/?lang=es" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aegiflow.eu/" />
+
+  <!-- Open Graph / LinkedIn / Redes Sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.aegiflow.eu/" />
+  <meta property="og:site_name" content="AEGIFLOW" />
+  <meta property="og:title" content="AEGIFLOW — Automatisez avec l'IA sur mesure tout en sécurisant vos données" />
+  <meta property="og:description"
+    content="Agents IA & LLMs sur mesure, Automatisation & APIs, Développement Logiciel et Security by Design. Interventions en France, Espagne & International." />
+  <meta property="og:image" content="https://www.aegiflow.eu/assets/img/og-banner.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AEGIFLOW · IA + Automatisation + Sécurité" />
+  <meta name="twitter:description"
+    content="Automatisez avec l'IA sur mesure tout en sécurisant vos données. Security by Design." />
+  <meta name="twitter:image" content="https://www.aegiflow.eu/assets/img/og-banner.jpg" />
+
+  <!-- Favicon Vectorial SVG Oficial & Fallback -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2301030A'/%3E%3Cpath d='M50 10 L84 26 V54 C84 74 50 90 50 90 C50 90 16 74 16 54 V26 L50 10 Z' fill='none' stroke='%2300F0FF' stroke-width='5.5'/%3E%3Cpath d='M33 75 L50 26 L67 75' fill='none' stroke='%23FFFFFF' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M35 52 C14 38, 14 70, 36 58 L64 46 C86 34, 86 68, 65 54' fill='none' stroke='%2300F0FF' stroke-width='4.5' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='52' r='5.5' fill='%23FFFFFF'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts Optimizadas con display swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Datos Estructurados Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "AEGIFLOW",
+    "alternateName": "AEGIFLOW · IA + Automatisation + Sécurité",
+    "url": "https://www.aegiflow.eu",
+    "logo": "https://www.aegiflow.eu/favicon.svg",
+    "image": "https://www.aegiflow.eu/assets/img/og-banner.jpg",
+    "slogan": "Automatisez avec l'IA sur mesure tout en sécurisant vos données.",
+    "description": "Ingénierie IA sur mesure, systèmes multi-agents, automatisation de processus par API, développement web/mobile/desktop et architecture Security by Design.",
+    "founder": {
+      "@type": "Person",
+      "name": "Ousmane Barry",
+      "jobTitle": "Fondateur & Ingénieur IA, Logiciel & Cybersécurité",
+      "url": "https://www.linkedin.com/in/ousmane-barry",
+      "sameAs": [
+        "https://www.linkedin.com/in/ousmane-barry"
+      ]
+    },
+    "areaServed": [
+      { "@type": "Country", "name": "France" },
+      { "@type": "Country", "name": "Spain" },
+      { "@type": "Place", "name": "International" }
+    ],
+    "availableLanguage": ["fr", "en", "es"],
+    "knowsAbout": [
+      "Agents IA & LLMs sur mesure",
+      "Automatisation & APIs",
+      "Security by Design",
+      "Cybersécurité & Pentest",
+      "Développement Web, Mobile & Desktop"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg-abyss: #01030A;
+      --bg-deep: #030613;
+      --bg-card: rgba(7, 13, 29, 0.78);
+      --bg-card-solid: #060B19;
+      --blue-electric: #0044FF;
+      --cyan-neon: #00F0FF;
+      --cyan-hover: #47F5FF;
+      --red-risk: #FF4D6D;
+      --text-white: #FFFFFF;
+      --text-light: #E2E8F0;
+      --text-muted: #94A3B8;
+      --border-cyan: rgba(0, 240, 255, 0.22);
+      --border-cyan-bright: rgba(0, 240, 255, 0.45);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+      --header-h: 76px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-abyss);
+      color: var(--text-white);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--bg-abyss);
+      background-image:
+        radial-gradient(circle at 68% 16%, rgba(0, 68, 255, 0.28) 0%, rgba(0, 240, 255, 0.09) 25%, transparent 55%),
+        radial-gradient(circle at 15% 60%, rgba(0, 68, 255, 0.14) 0%, transparent 45%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding: 0 1.75rem;
+      }
+    }
+
+    /* ACCESIBILIDAD SKIP LINK */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      background: var(--cyan-neon);
+      color: #01030A;
+      padding: 0.6rem 1rem;
+      font-weight: 700;
+      border-radius: 0.5rem;
+      z-index: 9999;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    /* ==========================================================================
+       BARRA DE NAVEGACIÓN SUPERIOR (100% RESPONSIVE: MÓVIL, TABLET Y PC)
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--header-h);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: height 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Pseudo-elemento para el blur: evita romper position:fixed y mejora FPS */
+    .navbar::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(1, 3, 10, 0.84);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: -1;
+      transition: background 0.25s ease;
+    }
+
+    .navbar.scrolled {
+      border-bottom-color: var(--border-cyan);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.65);
+    }
+
+    .navbar.scrolled::before {
+      background: rgba(1, 3, 10, 0.94);
+    }
+
+    .navbar-container {
+      width: 100%;
+      max-width: 1540px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      gap: 0.75rem;
+    }
+
+    /* MARCA Y LOGO (ESCALADO FLUIDO SIN DESBORDAMIENTO EN MÓVILES PEQUEÑOS) */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      min-width: 0;
+      flex-shrink: 1;
+      z-index: 1010;
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.5));
+      transition: transform 0.25s ease;
+    }
+
+    .brand:hover .brand-logo {
+      transform: scale(1.05);
+    }
+
+    .brand-text {
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .brand-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.05rem, 3.8vw, 1.25rem);
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      color: var(--text-white);
+      display: block;
+      line-height: 1.05;
+      white-space: nowrap;
+    }
+
+    .brand-sub {
+      font-size: clamp(0.52rem, 2vw, 0.62rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan-neon);
+      display: block;
+      margin-top: 2px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-badge {
+      display: none;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(0, 240, 255, 0.06);
+      border: 1px solid rgba(0, 240, 255, 0.24);
+      border-radius: 999px;
+      padding: 0.22rem 0.65rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--cyan-neon);
+      letter-spacing: 0.05em;
+      margin-left: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .status-indicator {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan-neon);
+      box-shadow: 0 0 8px var(--cyan-neon);
+      animation: fab-pulse-anim 2s infinite;
+    }
+
+    /* DOCK CENTRAL FLOTANTE (SOLO EN DESKTOP >= 1100px) */
+    .nav-dock {
+      display: none;
+      align-items: center;
+      gap: 0.25rem;
+      background: rgba(6, 12, 28, 0.75);
+      border: 1px solid var(--border-cyan);
+      border-radius: 999px;
+      padding: 0.32rem 0.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 240, 255, 0.08);
+    }
+
+    .nav-dock-link {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      transition: all 0.22s ease;
+      white-space: nowrap;
+    }
+
+    .nav-dock-link:hover,
+    .nav-dock-link.active {
+      color: var(--text-white);
+      background: rgba(0, 240, 255, 0.12);
+      box-shadow: inset 0 0 0 1px rgba(0, 240, 255, 0.28);
+      text-shadow: 0 0 8px rgba(0, 240, 255, 0.45);
+    }
+
+    /* ACCIONES DE LA DERECHA */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+      z-index: 1010;
+    }
+
+    /* Selector de idioma en barra superior (Visible en Tablet y PC >= 640px) */
+    .desktop-lang {
+      display: none;
+      align-items: center;
+      background: #050A18;
+      border: 1px solid var(--border-cyan);
+      border-radius: 999px;
+      padding: 0.18rem;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 0.73rem;
+      font-weight: 700;
+      padding: 0.28rem 0.58rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      color: var(--text-white);
+    }
+
+    .lang-btn.active {
+      background: var(--cyan-neon);
+      color: #01030A;
+      box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+    }
+
+    /* IMPORTANTE: Oculto estrictamente en móvil para no pisarse con .btn-cyan */
+    .btn-cyan.nav-cta-btn {
+      display: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.84rem;
+      white-space: nowrap;
+    }
+
+    /* BOTÓN HAMBURGUESA (VISIBLE EN MÓVIL Y TABLET < 1100px) */
+    .nav-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      background: rgba(6, 11, 25, 0.92);
+      border: 1px solid var(--border-cyan);
+      border-radius: 0.7rem;
+      cursor: pointer;
+      padding: 0;
+      gap: 5px;
+      transition: all 0.25s ease;
+      box-shadow: 0 0 12px rgba(0, 240, 255, 0.15);
+    }
+
+    .nav-toggle:hover {
+      border-color: var(--cyan-neon);
+      box-shadow: 0 0 18px rgba(0, 240, 255, 0.4);
+      background: rgba(0, 240, 255, 0.08);
+    }
+
+    .nav-toggle .bar {
+      width: 20px;
+      height: 2px;
+      background-color: var(--cyan-neon);
+      border-radius: 2px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease, background-color 0.2s ease;
+      transform-origin: center;
+    }
+
+    .nav-toggle.open {
+      border-color: var(--cyan-neon);
+      background: rgba(0, 240, 255, 0.16);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+    }
+
+    .nav-toggle.open .bar:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+      background-color: #FFFFFF;
+    }
+
+    .nav-toggle.open .bar:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    .nav-toggle.open .bar:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+      background-color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       DRAWER / MENÚ MÓVIL Y TABLET (FUERA DEL HEADER PARA OCUPAR 100dvh REALES)
+       ========================================================================== */
+    .mobile-nav-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(1, 3, 10, 0.72);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 990;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.28s ease, visibility 0.28s ease;
+    }
+
+    .mobile-nav-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 420px;
+      height: 100dvh;
+      background: rgba(2, 6, 18, 0.98);
+      border-left: 1px solid var(--border-cyan);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: calc(var(--header-h) + 1.1rem) 1.25rem calc(1.5rem + env(safe-area-inset-bottom));
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.25s ease;
+      z-index: 995;
+      overflow-y: auto;
+      box-shadow: -16px 0 50px rgba(0, 0, 0, 0.85);
+    }
+
+    .mobile-nav.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    .mobile-nav-header {
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mobile-nav-header-tag {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan-neon);
+    }
+
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .mobile-nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.95rem 1.15rem;
+      background: rgba(6, 12, 28, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    .mobile-nav-item:hover,
+    .mobile-nav-item:active {
+      background: rgba(0, 240, 255, 0.08);
+      border-color: var(--cyan-neon);
+      transform: translateX(4px);
+    }
+
+    .mobile-item-left {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .mobile-item-num {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--cyan-neon);
+      width: 22px;
+    }
+
+    .mobile-item-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-white);
+      line-height: 1.2;
+    }
+
+    .mobile-item-sub {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .mobile-item-arrow {
+      color: var(--cyan-neon);
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: transform 0.2s ease;
+    }
+
+    .mobile-nav-item:hover .mobile-item-arrow {
+      transform: translateX(3px);
+    }
+
+    .mobile-lang-box {
+      background: rgba(4, 8, 20, 0.85);
+      border: 1px solid var(--border-subtle);
+      border-radius: 1rem;
+      padding: 1.15rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .mobile-lang-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .mobile-lang-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+
+    .mobile-lang-btn {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-light);
+      border-radius: 0.65rem;
+      padding: 0.65rem 0.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+      transition: all 0.2s ease;
+    }
+
+    .mobile-lang-btn span.sub {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .mobile-lang-btn:hover {
+      border-color: var(--border-cyan);
+      color: var(--text-white);
+    }
+
+    .mobile-lang-btn.active {
+      background: var(--cyan-neon);
+      border-color: var(--cyan-neon);
+      color: #01030A;
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.45);
+    }
+
+    .mobile-lang-btn.active span.sub {
+      color: #01030A;
+      font-weight: 700;
+    }
+
+    .mobile-cta-btn {
+      width: 100%;
+      padding: 0.95rem;
+      font-size: 1rem;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.45);
+    }
+
+    /* Breakpoints progresivos del Header: Tablet (640px / 768px) -> Desktop (1100px) -> Wide (1360px) */
+    @media (min-width: 640px) {
+      .navbar-container {
+        padding: 0 1.5rem;
+      }
+
+      .brand-logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      .desktop-lang {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .btn-cyan.nav-cta-btn {
+        display: inline-flex;
+      }
+    }
+
+    @media (min-width: 1100px) {
+      :root {
+        --header-h: 80px;
+      }
+
+      .navbar-container {
+        padding: 0 2.25rem;
+      }
+
+      .nav-dock {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: none !important;
+      }
+
+      .mobile-nav,
+      .mobile-nav-backdrop {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 1360px) {
+      .navbar-container {
+        padding: 0 3.25rem;
+      }
+
+      .brand-badge {
+        display: inline-flex;
+      }
+
+      .nav-dock {
+        gap: 0.45rem;
+        padding: 0.36rem 0.75rem;
+      }
+
+      .nav-dock-link {
+        padding: 0.48rem 1.05rem;
+        font-size: 0.88rem;
+      }
+    }
+
+    /* BOTONES */
+    .btn-cyan {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      background: var(--cyan-neon);
+      color: #01030A;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 0.88rem 1.8rem;
+      border-radius: 999px;
+      box-shadow: 0 0 28px rgba(0, 240, 255, 0.42);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-cyan:hover {
+      background: var(--cyan-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 0 38px rgba(0, 240, 255, 0.75);
+    }
+
+    .btn-cyan:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      background: rgba(6, 11, 25, 0.8);
+      color: var(--text-white);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.88rem 1.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: all 0.2s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--cyan-neon);
+      color: var(--cyan-neon);
+      background: rgba(0, 240, 255, 0.05);
+      transform: translateY(-2px);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      padding: calc(var(--header-h) + 2.5rem) 0 4rem;
+      position: relative;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.75rem;
+      align-items: center;
+    }
+
+    .glass-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 1.15rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(8px);
+      font-size: 0.84rem;
+      color: var(--text-light);
+      margin-bottom: 1.35rem;
+    }
+
+    .glass-pill strong {
+      font-family: var(--font-display);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--text-white);
+      font-size: 0.92rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 6.8vw, 3.75rem);
+      font-weight: 800;
+      line-height: 1.18;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      color: var(--text-white);
+      word-break: break-word;
+    }
+
+    .cyan-highlight {
+      display: inline-block;
+      background: var(--cyan-neon);
+      color: #01030A;
+      padding: 0.04em 0.3em;
+      border-radius: 0.25rem;
+      transform: rotate(-1.5deg);
+      box-shadow: 0 0 32px rgba(0, 240, 255, 0.55);
+      margin: 0.15rem 0.12rem;
+    }
+
+    .hero-subtitle {
+      margin-top: 1.35rem;
+      font-size: clamp(0.98rem, 2.2vw, 1.12rem);
+      color: var(--text-muted);
+      max-width: 620px;
+      line-height: 1.65;
+    }
+
+    .hero-cta-group {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .hero-scope {
+      margin-top: 1.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      flex-wrap: wrap;
+    }
+
+    .scope-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cyan-neon);
+      box-shadow: 0 0 10px var(--cyan-neon);
+      flex-shrink: 0;
+    }
+
+    /* PANEL ORBITAL DEL HERO */
+    .orbital-panel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      padding: 1.35rem;
+      border: 1px solid var(--border-cyan);
+      border-radius: 1.25rem;
+      background: linear-gradient(135deg, rgba(0, 68, 255, 0.16) 0%, rgba(5, 10, 24, 0.65) 100%);
+      box-shadow: 0 0 38px rgba(0, 68, 255, 0.18);
+    }
+
+    .orbital-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.95rem 1.15rem;
+      background: rgba(4, 8, 20, 0.92);
+      border: 1px solid var(--border-cyan);
+      border-radius: 0.95rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .orbital-item:hover {
+      transform: translateX(4px);
+      border-color: var(--cyan-neon);
+    }
+
+    .orbital-icon {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 0.75rem;
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid rgba(0, 240, 255, 0.38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cyan-neon);
+    }
+
+    .orbital-text h2 {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-white);
+      line-height: 1.25;
+    }
+
+    .orbital-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+      line-height: 1.4;
+    }
+
+    /* SECCIONES COMUNES */
+    .section {
+      padding: 4.8rem 0;
+      position: relative;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 2.75rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cyan-neon);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4.2vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.22;
+      color: var(--text-white);
+      letter-spacing: -0.01em;
+    }
+
+    .section-desc {
+      margin-top: 0.9rem;
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* REJILLA DE TARJETAS (CARDS GRID) */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 1.25rem;
+      padding: 1.85rem 1.45rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-cyan-bright);
+      box-shadow: 0 12px 35px rgba(0, 68, 255, 0.15);
+    }
+
+    .card.featured {
+      background: linear-gradient(180deg, rgba(7, 18, 48, 0.85) 0%, rgba(3, 7, 18, 0.95) 100%);
+      border: 1px solid var(--cyan-neon);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.22);
+    }
+
+    .badge-top {
+      position: absolute;
+      top: -12px;
+      right: 1.5rem;
+      background: var(--cyan-neon);
+      color: #01030A;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.22rem 0.75rem;
+      border-radius: 999px;
+      box-shadow: 0 0 14px rgba(0, 240, 255, 0.6);
+    }
+
+    .card-num {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--cyan-neon);
+      margin-bottom: 0.85rem;
+      line-height: 1;
+    }
+
+    .card h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .card-list {
+      margin-top: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .card-list li {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      line-height: 1.45;
+    }
+
+    .card-list li::before {
+      content: "▹";
+      color: var(--cyan-neon);
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    /* COMPARATIVA SECURITY BY DESIGN */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .compare-col {
+      border-radius: 1.25rem;
+      padding: 1.85rem 1.45rem;
+      position: relative;
+    }
+
+    .compare-col.risk {
+      background: rgba(30, 8, 16, 0.75);
+      border: 1px solid rgba(255, 77, 109, 0.3);
+    }
+
+    .compare-col.aegiflow {
+      background: rgba(4, 18, 36, 0.82);
+      border: 1px solid var(--cyan-neon);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.2);
+    }
+
+    .compare-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1.4rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .compare-header h3 {
+      font-family: var(--font-display);
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .tag-risk {
+      background: rgba(255, 77, 109, 0.16);
+      color: var(--red-risk);
+      border: 1px solid var(--red-risk);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.22rem 0.65rem;
+      border-radius: 999px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .tag-safe {
+      background: rgba(0, 240, 255, 0.15);
+      color: var(--cyan-neon);
+      border: 1px solid var(--cyan-neon);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.22rem 0.65rem;
+      border-radius: 999px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+    }
+
+    .compare-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .compare-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.86rem;
+      line-height: 1.5;
+      color: var(--text-light);
+    }
+
+    .icon-x {
+      color: var(--red-risk);
+      font-weight: 800;
+      flex-shrink: 0;
+      line-height: 1.4;
+    }
+
+    .icon-ok {
+      color: var(--cyan-neon);
+      font-weight: 800;
+      flex-shrink: 0;
+      line-height: 1.4;
+    }
+
+    /* SECCIÓN FUNDADOR & KPIS */
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .founder-card {
+      background: var(--bg-card-solid);
+      border: 1px solid var(--border-cyan);
+      border-radius: 1.25rem;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 0 35px rgba(0, 68, 255, 0.15);
+    }
+
+    .founder-avatar {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--blue-electric), var(--cyan-neon));
+      color: #01030A;
+      font-family: var(--font-display);
+      font-size: 1.65rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.45);
+    }
+
+    .kpi-grid {
+      margin-top: 1.85rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.85rem;
+    }
+
+    .kpi-box {
+      padding: 0.95rem 1rem;
+      border-radius: 0.85rem;
+      background: #040814;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s ease;
+    }
+
+    .kpi-box:hover {
+      border-color: var(--cyan-neon);
+    }
+
+    .kpi-val {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--cyan-neon);
+      line-height: 1.1;
+    }
+
+    .kpi-label {
+      font-size: 0.76rem;
+      color: var(--text-light);
+      margin-top: 0.35rem;
+      font-weight: 500;
+    }
+
+    /* FORMULARIO DE CONTACTO SEGURO */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .form-card {
+      background: var(--bg-card-solid);
+      border: 1px solid var(--border-cyan);
+      border-radius: 1.35rem;
+      padding: 1.65rem 1.35rem;
+      box-shadow: 0 0 40px rgba(0, 68, 255, 0.16);
+    }
+
+    .form-group {
+      margin-bottom: 1.15rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.15rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      background: #02050E;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 0.65rem;
+      padding: 0.85rem 1rem;
+      color: var(--text-white);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      /* 16px mínimo para evitar zoom automático en iOS */
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--cyan-neon);
+      box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.18);
+    }
+
+    .form-textarea {
+      min-height: 115px;
+      resize: vertical;
+    }
+
+    .form-consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin: 1.1rem 0 1.4rem;
+      cursor: pointer;
+    }
+
+    .form-consent input {
+      margin-top: 0.25rem;
+      accent-color: var(--cyan-neon);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .form-status {
+      margin-top: 1.1rem;
+      padding: 0.95rem 1.1rem;
+      border-radius: 0.65rem;
+      font-size: 0.86rem;
+      font-weight: 600;
+      display: none;
+      line-height: 1.5;
+    }
+
+    .form-status.success {
+      display: block;
+      background: rgba(0, 240, 255, 0.12);
+      border: 1px solid var(--cyan-neon);
+      color: var(--cyan-neon);
+    }
+
+    .form-status.error {
+      display: block;
+      background: rgba(255, 77, 109, 0.12);
+      border: 1px solid var(--red-risk);
+      color: var(--red-risk);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 2.75rem 0 calc(2.75rem + env(safe-area-inset-bottom));
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      background: #010207;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .footer-legal-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-legal-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      transition: color 0.2s ease;
+      padding: 0.25rem;
+    }
+
+    .footer-legal-btn:hover {
+      color: var(--cyan-neon);
+    }
+
+    /* MODALES POPUP (LEGAL & RGPD) */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(1, 3, 10, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: #050A18;
+      border: 1px solid var(--border-cyan);
+      border-radius: 1.25rem;
+      max-width: 680px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 1.85rem 1.45rem;
+      position: relative;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.15rem;
+      right: 1.15rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-white);
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .modal-close:hover {
+      border-color: var(--cyan-neon);
+      color: var(--cyan-neon);
+      background: rgba(0, 240, 255, 0.1);
+    }
+
+    .modal-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: var(--text-white);
+      margin-bottom: 1.25rem;
+      padding-right: 2rem;
+    }
+
+    .modal-content h4 {
+      font-size: 0.95rem;
+      color: var(--cyan-neon);
+      margin: 1.2rem 0 0.35rem;
+    }
+
+    .modal-content p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* BOTONES FLOTANTES DE ACCIÓN RÁPIDA (FAB) */
+    .floating-actions {
+      position: fixed;
+      bottom: calc(1.5rem + env(safe-area-inset-bottom));
+      right: 1.25rem;
+      z-index: 950;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .fab-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      background: rgba(4, 8, 20, 0.88);
+      border: 1px solid var(--border-cyan);
+      color: var(--cyan-neon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65), 0 0 14px rgba(0, 240, 255, 0.25);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      cursor: pointer;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, background 0.25s ease, opacity 0.3s ease, visibility 0.3s ease;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .fab-btn:hover {
+      transform: translateY(-3px) scale(1.06);
+      background: #060e24;
+      border-color: var(--cyan-hover);
+      box-shadow: 0 6px 25px rgba(0, 240, 255, 0.55);
+      color: #FFFFFF;
+    }
+
+    .fab-btn:focus-visible {
+      outline: 2px solid var(--cyan-neon);
+      outline-offset: 2px;
+    }
+
+    .fab-contact {
+      background: linear-gradient(135deg, rgba(0, 68, 255, 0.35), rgba(0, 240, 255, 0.15));
+    }
+
+    .fab-pulse {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--cyan-neon);
+      box-shadow: 0 0 8px var(--cyan-neon);
+      animation: fab-pulse-anim 2s infinite;
+    }
+
+    @keyframes fab-pulse-anim {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7);
+      }
+
+      70% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 7px rgba(0, 240, 255, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 240, 255, 0);
+      }
+    }
+
+    .fab-top {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      pointer-events: none;
+    }
+
+    .fab-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* MEDIA QUERIES PARA PANTALLAS GRANDES Y TABLETS */
+    @media (min-width: 640px) {
+      .hero-cta-group {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .hero {
+        padding: 9.5rem 0 5.5rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.32fr 0.98fr;
+        gap: 3.25rem;
+      }
+
+      .orbital-panel {
+        padding: 1.5rem;
+        border-radius: 1.5rem 0 0 1.5rem;
+        border-left: 2px solid var(--cyan-neon);
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        box-shadow: -12px 0 38px -12px rgba(0, 240, 255, 0.35);
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .compare-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .founder-grid {
+        grid-template-columns: 0.85fr 1.65fr;
+      }
+
+      .kpi-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr 1.25fr;
+      }
+
+      .form-card {
+        padding: 2.25rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .floating-actions {
+        bottom: 2rem;
+        right: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">Aller au contenu principal</a>
+
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+  <header class="navbar" id="main-navbar">
+    <div class="navbar-container">
+      <!-- 1. Marca / Logo -->
+      <a href="#top" class="brand" aria-label="AEGIFLOW Accueil" onclick="closeMobileNav()">
+        <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 8 L84 24 V54 C84 74 50 92 50 92 C50 92 16 74 16 54 V24 L50 8 Z" stroke="#00F0FF"
+            stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 76 L50 26 L68 76" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M35 52 C12 36, 12 72, 36 58 L64 46 C88 34, 88 68, 65 54" stroke="#00F0FF" stroke-width="4.5"
+            stroke-linecap="round" />
+          <circle cx="50" cy="52" r="5.5" fill="#FFFFFF" />
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">AEGIFLOW</span>
+          <span class="brand-sub" data-i18n="brand_sub">IA + Automatisation + Sécurité</span>
+        </div>
+        <div class="brand-badge" aria-hidden="true">
+          <span class="status-indicator"></span>
+          <span>Security by Design</span>
+        </div>
+      </a>
+
+      <!-- 2. Dock de Navegación Central (Desktop >= 1100px) -->
+      <nav class="nav-dock" aria-label="Navigation principale">
+        <a href="#expertises" class="nav-dock-link" data-section="expertises" data-i18n="nav_exp">Expertises</a>
+        <a href="#cas-usage" class="nav-dock-link" data-section="cas-usage" data-i18n="nav_usecases">Cas d'usage</a>
+        <a href="#comparatif" class="nav-dock-link" data-section="comparatif" data-i18n="nav_why">Pourquoi nous</a>
+        <a href="#offres" class="nav-dock-link" data-section="offres" data-i18n="nav_offers">Solutions</a>
+        <a href="#fondateur" class="nav-dock-link" data-section="fondateur" data-i18n="nav_founder">À propos</a>
+      </nav>
+
+      <!-- 3. Acciones Derecha -->
+      <div class="nav-actions">
+        <!-- Selector de idioma (Visible desde 640px) -->
+        <div class="desktop-lang" role="group" aria-label="Sélecteur de langue">
+          <button type="button" class="lang-btn active" data-lang="fr" onclick="setLanguage('fr')"
+            aria-pressed="true">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')"
+            aria-pressed="false">EN</button>
+          <button type="button" class="lang-btn" data-lang="es" onclick="setLanguage('es')"
+            aria-pressed="false">ES</button>
+        </div>
+
+        <!-- Botón CTA (Visible desde 768px; data-i18n en el span para conservar el SVG) -->
+        <a href="#contact" class="btn-cyan nav-cta-btn">
+          <span data-i18n="nav_cta">Discutons de votre projet</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Botón Hamburguesa (Visible en Móvil y Tablet < 1100px) -->
+        <button type="button" class="nav-toggle" id="nav-toggle" onclick="toggleMobileNav()" aria-label="Ouvrir le menu"
+          aria-expanded="false" aria-controls="mobile-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BACKDROP Y DRAWER MÓVIL / TABLET (FUERA DEL HEADER PARA OCUPAR 100dvh REALES) -->
+  <div id="mobile-nav-backdrop" class="mobile-nav-backdrop" onclick="closeMobileNav()" aria-hidden="true"></div>
+
+  <aside id="mobile-nav" class="mobile-nav" aria-hidden="true" aria-label="Menu mobile">
+    <div>
+      <div class="mobile-nav-header">
+        <span class="mobile-nav-header-tag" data-i18n="mob_nav_header">AEGIFLOW · MENU</span>
+        <span style="font-size: 0.72rem; color: var(--text-muted);">Security by Design</span>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="Navigation mobile">
+        <a href="#expertises" class="mobile-nav-item" onclick="closeMobileNav()">
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">01</span>
+            <div>
+              <div class="mobile-item-title" data-i18n="nav_exp">Expertises</div>
+              <div class="mobile-item-sub" data-i18n="mob_sub_exp">IA, automatisation & logiciels</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#cas-usage" class="mobile-nav-item" onclick="closeMobileNav()">
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">02</span>
+            <div>
+              <div class="mobile-item-title" data-i18n="nav_usecases">Cas d'usage</div>
+              <div class="mobile-item-sub" data-i18n="mob_sub_uc">Ce que nous déployons</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#comparatif" class="mobile-nav-item" onclick="closeMobileNav()">
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">03</span>
+            <div>
+              <div class="mobile-item-title" data-i18n="nav_why">Pourquoi nous</div>
+              <div class="mobile-item-sub" data-i18n="mob_sub_why">Standard Security by Design</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#offres" class="mobile-nav-item" onclick="closeMobileNav()">
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">04</span>
+            <div>
+              <div class="mobile-item-title" data-i18n="nav_offers">Solutions</div>
+              <div class="mobile-item-sub" data-i18n="mob_sub_off">Formats d'intervention</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#fondateur" class="mobile-nav-item" onclick="closeMobileNav()">
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">05</span>
+            <div>
+              <div class="mobile-item-title" data-i18n="nav_founder">À propos</div>
+              <div class="mobile-item-sub" data-i18n="mob_sub_fnd">Ousmane Barry & Track Record</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </div>
+
+    <div>
+      <div class="mobile-lang-box">
+        <span class="mobile-lang-title" data-i18n="mob_lang_label">Langue du site / Language :</span>
+        <div class="mobile-lang-grid" role="group" aria-label="Choisir la langue">
+          <button type="button" class="mobile-lang-btn active" data-lang="fr" onclick="setLanguage('fr')">
+            <span>FR</span>
+            <span class="sub">Français</span>
+          </button>
+          <button type="button" class="mobile-lang-btn" data-lang="en" onclick="setLanguage('en')">
+            <span>EN</span>
+            <span class="sub">English</span>
+          </button>
+          <button type="button" class="mobile-lang-btn" data-lang="es" onclick="setLanguage('es')">
+            <span>ES</span>
+            <span class="sub">Español</span>
+          </button>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn-cyan mobile-cta-btn" onclick="closeMobileNav()" data-i18n="nav_cta">
+        Discutons de votre projet
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="glass-pill">
+            <strong>AEGIFLOW</strong>
+            <span data-i18n="hero_pill">· IA + Automatisation + Sécurité</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero_t1">AUTOMATISEZ AVEC</span>
+            <span class="cyan-highlight" data-i18n="hero_t_highlight">L'IA SUR MESURE</span>
+            <br />
+            <span data-i18n="hero_t2">TOUT EN SÉCURISANT VOS DONNÉES</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero_sub">
+            Nous concevons et déployons des agents IA, des automatisations complexes et des solutions logicielles (Web,
+            Mobile & PC) blindées dès la conception pour accélérer votre activité.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn-cyan" data-i18n="hero_cta_1">Discutons de votre projet</a>
+            <a href="#cas-usage" class="btn-outline" data-i18n="hero_cta_2">Voir les cas d'usage</a>
+          </div>
+
+          <div class="hero-scope">
+            <span class="scope-dot" aria-hidden="true"></span>
+            <span data-i18n="hero_scope">France · Espagne · International</span>
+          </div>
+        </div>
+
+        <!-- 3 PILARES EN ÓRBITA DEL BANNER -->
+        <aside class="orbital-panel" aria-label="Piliers AEGIFLOW">
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="7" y="7" width="10" height="10" rx="2" />
+                <path
+                  d="M12 2v5M12 17v5M2 12h5M17 12h5M4.93 4.93l3.54 3.54M15.54 15.54l3.53 3.53M19.07 4.93l-3.53 3.54M8.46 15.54l-3.53 3.53" />
+              </svg>
+            </div>
+            <div class="orbital-text">
+              <h2 data-i18n="orb_1_t">Agents IA & LLMs sur mesure</h2>
+              <p data-i18n="orb_1_d">Systèmes multi-agents et modèles adaptés à vos opérations.</p>
+            </div>
+          </div>
+
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="18" cy="6" r="3" />
+                <circle cx="18" cy="18" r="3" />
+                <path d="M9 6h6M6 9v3a6 6 0 0 0 6 6h3" />
+              </svg>
+            </div>
+            <div class="orbital-text">
+              <h2 data-i18n="orb_2_t">Automatisation & APIs</h2>
+              <p data-i18n="orb_2_d">Interconnexion fluide de vos outils, CRM et logiciels métiers.</p>
+            </div>
+          </div>
+
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+                <path d="M50 10 L84 26 V54 C84 74 50 90 50 90 C50 90 16 74 16 54 V26 L50 10 Z" stroke="currentColor"
+                  stroke-width="7" />
+                <path d="M34 74 L50 28 L66 74" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="orbital-text">
+              <h2 data-i18n="orb_3_t">Security by Design</h2>
+              <p data-i18n="orb_3_d">Protection des clés API, contrôle des accès et cloisonnement.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 1. SECCIÓN DE ESPECIALIDADES -->
+    <section id="expertises" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="exp_tag">Nos Expertises</span>
+          <h2 class="section-title" data-i18n="exp_title">Une ingénierie complète : IA, Automatisation, Logiciel &
+            Sécurité.</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div>
+              <span class="card-num">01</span>
+              <h3 data-i18n="c1_title">Agents IA & LLMs sur mesure</h3>
+              <p data-i18n="c1_desc">
+                Conception de systèmes multi-agents et intégration de modèles LLM privés pour automatiser le traitement
+                documentaire, la qualification client et vos opérations internes.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li data-i18n="c1_b1">Systèmes multi-agents autonomes</li>
+              <li data-i18n="c1_b2">Intégration LLM sécurisée par API</li>
+              <li data-i18n="c1_b3">Zéro fuite vers des modèles publics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div>
+              <span class="card-num">02</span>
+              <h3 data-i18n="c2_title">Automatisation & Dev Web / Mobile / PC</h3>
+              <p data-i18n="c2_desc">
+                Développement de workflows complexes, interconnexions API et création d'applications web, mobiles et
+                logiciels desktop sur mesure pour centraliser votre activité.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li data-i18n="c2_b1">Workflows complexes & interconnexion API</li>
+              <li data-i18n="c2_b2">Applications Web, Mobile & Desktop (PC)</li>
+              <li data-i18n="c2_b3">Synchronisation CRM, ERP & Bases de données</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div>
+              <span class="card-num">03</span>
+              <h3 data-i18n="c3_title">Security by Design & Cybersécurité</h3>
+              <p data-i18n="c3_desc">
+                Chaque architecture est protégée dès sa conception : protection stricte des clés API, gestion granulaire
+                des rôles, durcissement système (Hardening) et défense active.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li data-i18n="c3_b1">Protection des clés API & secrets</li>
+              <li data-i18n="c3_b2">Hardening systèmes & infrastructures</li>
+              <li data-i18n="c3_b3">Audit offensif & élimination des failles</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CASOS DE USO CONCRETOS -->
+    <section id="cas-usage" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="uc_tag">Cas d'Usage Concrets</span>
+          <h2 class="section-title" data-i18n="uc_title">Ce que nous déployons concrètement dans votre entreprise.</h2>
+          <p class="section-desc" data-i18n="uc_sub">Des architectures opérationnelles conçues pour éliminer vos tâches
+            chronophages sans jamais exposer vos données.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div>
+              <span class="card-num">A</span>
+              <h3 data-i18n="uc1_title">Tri & Traitement Documentaire IA</h3>
+              <p data-i18n="uc1_desc">
+                Analyse automatique de vos contrats, factures, emails et pièces jointes par un agent IA privé,
+                extraction structurée des données et injection directe dans votre CRM ou ERP.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li data-i18n="uc1_b1">Traitement instantané 24/7 sans erreur</li>
+              <li data-i18n="uc1_b2">Cloisonnement strict des fichiers sensibles</li>
+              <li data-i18n="uc1_b3">Connexion directe à vos bases de données</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div>
+              <span class="card-num">B</span>
+              <h3 data-i18n="uc2_title">Assistants Internes & Multi-Agents</h3>
+              <p data-i18n="uc2_desc">
+                Déploiement d'agents IA connectés à la base de connaissances et aux outils internes de votre entreprise,
+                avec gestion fine des droits d'accès selon le rôle de chaque collaborateur.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li data-i18n="uc2_b1">Recherche et synthèse métier en temps réel</li>
+              <li data-i18n="uc2_b2">Contrôle granulaire des accès (RBAC)</li>
+              <li data-i18n="uc2_b3">Aucune donnée utilisée pour entraîner des tiers</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div>
+              <span class="card-num">C</span>
+              <h3 data-i18n="uc3_title">Pipeline Client & Applications Métier</h3>
+              <p data-i18n="uc3_desc">
+                Automatisation complète depuis la prise de contact jusqu'à l'onboarding client : qualification IA,
+                génération de documents, portail web/mobile dédié et suivi automatisé.
+              </p>
+            </div>
+            <ul class="card-list">
+              <li data-i18n="uc3_b1">Qualification et réponse instantanée aux leads</li>
+              <li data-i18n="uc3_b2">Portails Web, Mobile ou Desktop sur mesure</li>
+              <li data-i18n="uc3_b3">Flux API sécurisés de bout en bout</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMPARATIVA: BRICOLAGE IA VS STANDARD AEGIFLOW -->
+    <section id="comparatif" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="cmp_tag">Pourquoi choisir AEGIFLOW ?</span>
+          <h2 class="section-title" data-i18n="cmp_title">La différence entre un bricolage fragile et une architecture
+            Security by Design.</h2>
+        </div>
+
+        <div class="compare-grid">
+          <!-- Columna Riesgo -->
+          <div class="compare-col risk">
+            <div class="compare-header">
+              <h3 data-i18n="cmp_left_title">Intégration IA Classique</h3>
+              <span class="tag-risk" data-i18n="cmp_left_badge">Risque Élevé</span>
+            </div>
+            <ul class="compare-list">
+              <li>
+                <span class="icon-x">✕</span>
+                <span data-i18n="cmp_r1">Clés API et identifiants exposés en clair dans les scripts ou
+                  interfaces.</span>
+              </li>
+              <li>
+                <span class="icon-x">✕</span>
+                <span data-i18n="cmp_r2">Envoi de données clients confidentielles vers des modèles IA publics non
+                  cloisonnés.</span>
+              </li>
+              <li>
+                <span class="icon-x">✕</span>
+                <span data-i18n="cmp_r3">Automatisations instables qui cassent dès qu'une API ou un format
+                  évolue.</span>
+              </li>
+              <li>
+                <span class="icon-x">✕</span>
+                <span data-i18n="cmp_r4">Aucun contrôle des rôles ni vérification des failles de sécurité avant mise en
+                  ligne.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna AEGIFLOW -->
+          <div class="compare-col aegiflow">
+            <div class="compare-header">
+              <h3 data-i18n="cmp_right_title">Standard AEGIFLOW</h3>
+              <span class="tag-safe" data-i18n="cmp_right_badge">Security by Design</span>
+            </div>
+            <ul class="compare-list">
+              <li>
+                <span class="icon-ok">✓</span>
+                <span data-i18n="cmp_s1">Chiffrement et protection stricte des clés API, webhooks et variables
+                  d'environnement.</span>
+              </li>
+              <li>
+                <span class="icon-ok">✓</span>
+                <span data-i18n="cmp_s2">Architecture IA privée et cloisonnée : vos données restent 100 % sous votre
+                  contrôle.</span>
+              </li>
+              <li>
+                <span class="icon-ok">✓</span>
+                <span data-i18n="cmp_s3">Code propre, gestion des erreurs avancée et solutions Web/Mobile/PC
+                  évolutives.</span>
+              </li>
+              <li>
+                <span class="icon-ok">✓</span>
+                <span data-i18n="cmp_s4">Validation issue de la cybersécurité offensive (Pentest & Hardening) avant
+                  livraison.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SOLUCIONES / PAQUETES -->
+    <section id="offres" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="off_tag">Formats d'intervention</span>
+          <h2 class="section-title" data-i18n="off_title">Des déploiements structurés, rapides et orientés résultats.
+          </h2>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card">
+            <div>
+              <span class="section-tag" data-i18n="p1_step">Étape 01 · Quick Win</span>
+              <h3 data-i18n="p1_title">Audit Flash & 1er Flux</h3>
+              <p data-i18n="p1_desc">Cartographie de vos processus, vérification de sécurité de vos accès API et
+                déploiement rapide d'une première automatisation clé en main.</p>
+              <ul class="card-list">
+                <li data-i18n="p1_b1">Diagnostic complet des goulots d'étranglement</li>
+                <li data-i18n="p1_b2">Vérification de sécurité des intégrations</li>
+                <li data-i18n="p1_b3">1er système automatisé livré et opérationnel</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn-outline" style="margin-top: 1.75rem;" data-i18n="p1_cta">Demander ce
+              diagnostic</a>
+          </div>
+
+          <div class="card featured">
+            <span class="badge-top" data-i18n="p2_badge">Solution Complète</span>
+            <div>
+              <span class="section-tag" data-i18n="p2_step">Étape 02 · Architecture</span>
+              <h3 data-i18n="p2_title">Écosystème IA & Logiciel</h3>
+              <p data-i18n="p2_desc">Conception et déploiement intégral de vos agents IA, de vos flux automatisés et de
+                vos applications métiers sous architecture Security by Design.</p>
+              <ul class="card-list">
+                <li data-i18n="p2_b1">Agents IA, workflows & applications sur mesure</li>
+                <li data-i18n="p2_b2">Cloisonnement des données & gestion des accès</li>
+                <li data-i18n="p2_b3">Documentation technique & prise en main</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn-cyan" style="margin-top: 1.75rem;" data-i18n="p2_cta">Discutons de votre
+              projet</a>
+          </div>
+
+          <div class="card">
+            <div>
+              <span class="section-tag" data-i18n="p3_step">Étape 03 · Suivi continu</span>
+              <h3 data-i18n="p3_title">Évolution & Sécurité Continue</h3>
+              <p data-i18n="p3_desc">Accompagnement mensuel pour faire évoluer vos outils IA, maintenir vos connecteurs
+                API et garantir la protection continue de votre infrastructure.</p>
+              <ul class="card-list">
+                <li data-i18n="p3_b1">Monitoring et optimisation des performances</li>
+                <li data-i18n="p3_b2">Contrôles de sécurité et mises à jour régulières</li>
+                <li data-i18n="p3_b3">Support technique prioritaire</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn-outline" style="margin-top: 1.75rem;" data-i18n="p3_cta">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SOBRE EL FUNDADOR + 6 MÉTRICAS OFICIALES -->
+    <section id="fondateur" class="section">
+      <div class="container founder-grid">
+        <div class="founder-card">
+          <div class="founder-avatar" aria-hidden="true">OB</div>
+          <h3 style="font-family: var(--font-display); font-size: 1.35rem;">Ousmane Barry</h3>
+          <p style="color: var(--cyan-neon); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.3rem;"
+            data-i18n="f_role">
+            Fondateur @ AEGIFLOW
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.84rem; margin-top: 0.55rem;" data-i18n="f_loc">
+            France · Espagne · International
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <a href="https://www.linkedin.com/in/ousmane-barry" target="_blank" rel="noopener noreferrer"
+              class="btn-outline" style="padding: 0.55rem 1.2rem; font-size: 0.8rem;" data-i18n="f_linkedin">
+              Voir le profil LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <span class="section-tag" data-i18n="f_tag">À Propos</span>
+          <h2 class="section-title" data-i18n="f_title">L'alliance de la cybersécurité, de l'ingénierie IA et du
+            développement sur mesure.</h2>
+          <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.95rem; line-height: 1.65;"
+            data-i18n="f_bio">
+            Spécialiste en cybersécurité (Pentest, défense active et durcissement système), en ingénierie d'Intelligence
+            Artificielle (systèmes multi-agents, intégration LLM) et en développement logiciel complet (applications
+            Web, Mobiles, PC/Desktop et automatisations complexes), j'ai fondé AEGIFLOW pour permettre aux entreprises
+            en France, en Espagne et à l'international d'accélérer leurs opérations avec des architectures fiables,
+            performantes et sécurisées dès la conception.
+          </p>
+
+          <!-- LOS 6 INDICADORES CLAVE -->
+          <div class="kpi-grid">
+            <div class="kpi-box">
+              <span class="kpi-val">+8 ans</span>
+              <span class="kpi-label" data-i18n="kpi_1">d'expérience</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-val">+40</span>
+              <span class="kpi-label" data-i18n="kpi_2">projets réalisés</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-val">98,7%</span>
+              <span class="kpi-label" data-i18n="kpi_3">satisfaction client</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-val">99,4%</span>
+              <span class="kpi-label" data-i18n="kpi_4">délais respectés</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-val">100%</span>
+              <span class="kpi-label" data-i18n="kpi_5">Qualité</span>
+            </div>
+            <div class="kpi-box">
+              <span class="kpi-val">100%</span>
+              <span class="kpi-label" data-i18n="kpi_6">Conformité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACTO: LINKEDIN DIRECTO + FORMULARIO SEGURO PROTEGIDO EN /api/contact -->
+    <section id="contact" class="section" style="border-bottom: none;">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-tag" data-i18n="cta_tag">Contact & Diagnostic</span>
+          <h2 class="section-title" data-i18n="cta_title">Discutons de votre projet d'automatisation et d'IA.</h2>
+          <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;"
+            data-i18n="cta_sub">
+            Expliquez-nous votre besoin via le formulaire sécurisé ci-contre ou contactez directement Ousmane Barry en
+            message privé sur LinkedIn pour une réponse rapide.
+          </p>
+
+          <div style="margin-top: 1.85rem;">
+            <a href="https://www.linkedin.com/in/ousmane-barry" target="_blank" rel="noopener noreferrer"
+              class="btn-cyan" data-i18n="cta_btn_li">
+              Écrire directement sur LinkedIn
+            </a>
+          </div>
+
+          <ul class="card-list" style="margin-top: 2rem;">
+            <li data-i18n="cta_b1">Réponse rapide & confidentialité totale garantie</li>
+            <li data-i18n="cta_b2">Architecture sur mesure (IA, Automatisation, Web/Mobile/PC)</li>
+            <li data-i18n="cta_b3">Accompagnement en France, Espagne & International (FR / EN / ES)</li>
+          </ul>
+        </div>
+
+        <!-- FORMULARIO CONECTADO A /api/contact CON PROTECCIÓN ANTISPAM -->
+        <div class="form-card">
+          <form id="aegiflow-contact-form" onsubmit="handleContactSubmit(event)">
+            <!-- Trampa Honeypot invisible contra bots automatizados -->
+            <input type="text" name="website_hp" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name" class="form-label" data-i18n="form_name_l">Nom complet *</label>
+                <input type="text" id="f-name" name="NAME" required class="form-input" placeholder="Votre nom"
+                  data-i18n-placeholder="form_name_p" />
+              </div>
+              <div class="form-group">
+                <label for="f-email" class="form-label" data-i18n="form_email_l">Email professionnel *</label>
+                <input type="email" id="f-email" name="EMAIL" required class="form-input"
+                  placeholder="nom@entreprise.com" data-i18n-placeholder="form_email_p" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="f-company" class="form-label" data-i18n="form_comp_l">Entreprise (facultatif)</label>
+              <input type="text" id="f-company" name="COMPANY" class="form-input"
+                placeholder="Nom de votre structure ou organisation" data-i18n-placeholder="form_comp_p" />
+            </div>
+
+            <div class="form-group">
+              <label for="f-msg" class="form-label" data-i18n="form_msg_l">Détails de votre projet *</label>
+              <textarea id="f-msg" name="MESSAGE" required class="form-textarea"
+                placeholder="Décrivez brièvement les processus que vous souhaitez automatiser ou sécuriser..."
+                data-i18n-placeholder="form_msg_p"></textarea>
+            </div>
+
+            <label class="form-consent">
+              <input type="checkbox" required />
+              <span data-i18n="form_rgpd">J'accepte que mes informations soient traitées par AEGIFLOW uniquement pour
+                répondre à ma demande de contact (conformément à la politique de confidentialité).</span>
+            </label>
+
+            <button type="submit" id="form-submit-btn" class="btn-cyan" style="width: 100%;" data-i18n="form_submit">
+              Envoyer ma demande
+            </button>
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTONES FLOTANTES DE ACCIÓN RÁPIDA (FAB: BOTTOM RIGHT) -->
+  <aside class="floating-actions" aria-label="Actions rapides">
+    <!-- Botón 1: Llevar al formulario de contacto -->
+    <a href="#contact" id="fab-contact" class="fab-btn fab-contact" onclick="focusContactInput(event)"
+      aria-label="Écrire un message" data-i18n-title="fab_contact_title" title="Discuter de votre projet">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="fab-pulse" aria-hidden="true"></span>
+    </a>
+
+    <!-- Botón 2: Subir arriba de todo -->
+    <button type="button" id="fab-back-to-top" class="fab-btn fab-top" onclick="scrollToTop()"
+      aria-label="Retour en haut" data-i18n-title="fab_top_title" title="Retour en haut de page">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- FOOTER CON POPUPS LEGALES -->
+  <footer>
+    <div class="container footer-inner">
+      <p style="font-family: var(--font-display); font-weight: 700; color: var(--text-light); letter-spacing: 0.08em;">
+        AEGIFLOW · Automate Smarter. Secure by Design.
+      </p>
+      <p data-i18n="footer_copy">© 2026 AEGIFLOW — Tous droits réservés.</p>
+      <div class="footer-legal-links">
+        <button type="button" class="footer-legal-btn" onclick="openModal('modal-legal')"
+          data-i18n="footer_legal">Mentions légales</button>
+        <button type="button" class="footer-legal-btn" onclick="openModal('modal-privacy')"
+          data-i18n="footer_privacy">Politique de confidentialité</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL POPUP 1: MENTIONS LÉGALES -->
+  <div id="modal-legal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="legal-title"
+    onclick="closeOnBackdrop(event, 'modal-legal')">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeModal('modal-legal')" aria-label="Fermer">✕</button>
+      <h3 id="legal-title" data-i18n="leg_title">Mentions Légales</h3>
+      <div class="modal-content">
+        <h4 data-i18n="leg_h1">1. Éditeur du site</h4>
+        <p data-i18n="leg_p1">Le site www.aegiflow.eu est édité par AEGIFLOW (représenté par son fondateur Ousmane Barry,
+          entrepreneur individuel). Contact direct via le formulaire du site ou via LinkedIn :
+          linkedin.com/in/ousmane-barry.</p>
+        <h4 data-i18n="leg_h2">2. Hébergement</h4>
+        <p data-i18n="leg_p2">Hébergement web : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.</p>
+        <h4 data-i18n="leg_h3">3. Propriété intellectuelle</h4>
+        <p data-i18n="leg_p3">L'ensemble des éléments graphiques, textes, codes, logos et architectures présents sur le
+          site www.aegiflow.eu sont la propriété exclusive d'AEGIFLOW. Toute reproduction sans autorisation préalable est
+          interdite.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POPUP 2: POLITIQUE DE CONFIDENTIALITÉ (RGPD) -->
+  <div id="modal-privacy" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="priv-title"
+    onclick="closeOnBackdrop(event, 'modal-privacy')">
+    <div class="modal-box">
+      <button type="button" class="modal-close" onclick="closeModal('modal-privacy')" aria-label="Fermer">✕</button>
+      <h3 id="priv-title" data-i18n="prv_title">Politique de Confidentialité (RGPD)</h3>
+      <div class="modal-content">
+        <h4 data-i18n="prv_h1">1. Collecte minimale des données</h4>
+        <p data-i18n="prv_p1">AEGIFLOW collecte uniquement les informations strictement nécessaires transmises
+          volontairement via le formulaire de contact (nom, email professionnel, entreprise, description du besoin).
+          Aucun cookie publicitaire ou traceur intrusif n'est utilisé sur ce site.</p>
+        <h4 data-i18n="prv_h2">2. Finalité et traitement sécurisé</h4>
+        <p data-i18n="prv_p2">Les données soumises via le formulaire sont transmises de manière chiffrée et confidentielle uniquement pour répondre à votre demande. Vos données ne sont jamais vendues, louées ni cédées à des tiers.</p>
+        <h4 data-i18n="prv_h3">3. Vos droits (Accès, rectification, suppression)</h4>
+        <p data-i18n="prv_p3">Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un
+          droit d'accès, de modification et de suppression de vos données sur simple demande via notre formulaire ou par
+          message direct sur LinkedIn.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT: I18N REACTIVO, HAMBURGUESA MÓVIL, FAB & ENDPOINT SEGURO /api/contact -->
+  <script>
+    const i18n = {
+      fr: {
+        meta_title: "AEGIFLOW | IA sur mesure, Automatisation, Security by Design",
+        meta_desc: "Automatisez avec l'IA sur mesure tout en sécurisant vos données : agents IA & LLMs, automatisation de processus et Security by Design.",
+        skip_link: "Aller au contenu principal",
+        brand_sub: "IA + Automatisation + Sécurité",
+        nav_exp: "Expertises",
+        nav_usecases: "Cas d'usage",
+        nav_why: "Pourquoi nous",
+        nav_offers: "Solutions",
+        nav_founder: "À propos",
+        nav_cta: "Discutons de votre projet",
+        mob_nav_header: "AEGIFLOW · MENU",
+        mob_sub_exp: "IA, automatisation & logiciels",
+        mob_sub_uc: "Ce que nous déployons",
+        mob_sub_why: "Standard Security by Design",
+        mob_sub_off: "Formats d'intervention",
+        mob_sub_fnd: "Ousmane Barry & Track Record",
+        mob_lang_label: "Langue du site / Language :",
+        hero_pill: "· IA + Automatisation + Sécurité",
+        hero_t1: "AUTOMATISEZ AVEC",
+        hero_t_highlight: "L'IA SUR MESURE",
+        hero_t2: "TOUT EN SÉCURISANT VOS DONNÉES",
+        hero_sub: "Nous concevons et déployons des agents IA, des automatisations complexes et des solutions logicielles (Web, Mobile & PC) blindées dès la conception pour accélérer votre activité.",
+        hero_cta_1: "Discutons de votre projet",
+        hero_cta_2: "Voir les cas d'usage",
+        hero_scope: "France · Espagne · International",
+        orb_1_t: "Agents IA & LLMs sur mesure",
+        orb_1_d: "Systèmes multi-agents et modèles adaptés à vos opérations.",
+        orb_2_t: "Automatisation & APIs",
+        orb_2_d: "Interconnexion fluide de vos outils, CRM et logiciels métiers.",
+        orb_3_t: "Security by Design",
+        orb_3_d: "Protection des clés API, contrôle des accès et cloisonnement.",
+        exp_tag: "Nos Expertises",
+        exp_title: "Une ingénierie complète : IA, Automatisation, Logiciel & Sécurité.",
+        c1_title: "Agents IA & LLMs sur mesure",
+        c1_desc: "Conception de systèmes multi-agents et intégration de modèles LLM privés pour automatiser le traitement documentaire, la qualification client et vos opérations internes.",
+        c1_b1: "Systèmes multi-agents autonomes",
+        c1_b2: "Intégration LLM sécurisée par API",
+        c1_b3: "Zéro fuite vers des modèles publics",
+        c2_title: "Automatisation & Dev Web / Mobile / PC",
+        c2_desc: "Développement de workflows complexes, interconnexions API et création d'applications web, mobiles et logiciels desktop sur mesure pour centraliser votre activité.",
+        c2_b1: "Workflows complexes & interconnexion API",
+        c2_b2: "Applications Web, Mobile & Desktop (PC)",
+        c2_b3: "Synchronisation CRM, ERP & Bases de données",
+        c3_title: "Security by Design & Cybersécurité",
+        c3_desc: "Chaque architecture est protégée dès sa conception : protection stricte des clés API, gestion granulaire des rôles, durcissement système (Hardening) et défense active.",
+        c3_b1: "Protection des clés API & secrets",
+        c3_b2: "Hardening systèmes & infrastructures",
+        c3_b3: "Audit offensif & élimination des failles",
+        uc_tag: "Cas d'Usage Concrets",
+        uc_title: "Ce que nous déployons concrètement dans votre entreprise.",
+        uc_sub: "Des architectures opérationnelles conçues pour éliminer vos tâches chronophages sans jamais exposer vos données.",
+        uc1_title: "Tri & Traitement Documentaire IA",
+        uc1_desc: "Analyse automatique de vos contrats, factures, emails et pièces jointes par un agent IA privé, extraction structurée des données et injection directe dans votre CRM ou ERP.",
+        uc1_b1: "Traitement instantané 24/7 sans erreur",
+        uc1_b2: "Cloisonnement strict des fichiers sensibles",
+        uc1_b3: "Connexion directe à vos bases de données",
+        uc2_title: "Assistants Internes & Multi-Agents",
+        uc2_desc: "Déploiement d'agents IA connectés à la base de connaissances et aux outils internes de votre entreprise, avec gestion fine des droits d'accès selon le rôle de chaque collaborateur.",
+        uc2_b1: "Recherche et synthèse métier en temps réel",
+        uc2_b2: "Contrôle granulaire des accès (RBAC)",
+        uc2_b3: "Aucune donnée utilisée pour entraîner des tiers",
+        uc3_title: "Pipeline Client & Applications Métier",
+        uc3_desc: "Automatisation complète depuis la prise de contact jusqu'à l'onboarding client : qualification IA, génération de documents, portail web/mobile dédié et suivi automatisé.",
+        uc3_b1: "Qualification et réponse instantanée aux leads",
+        uc3_b2: "Portails Web, Mobile ou Desktop sur mesure",
+        uc3_b3: "Flux API sécurisés de bout en bout",
+        cmp_tag: "Pourquoi choisir AEGIFLOW ?",
+        cmp_title: "La différence entre un bricolage fragile et une architecture Security by Design.",
+        cmp_left_title: "Intégration IA Classique",
+        cmp_left_badge: "Risque Élevé",
+        cmp_r1: "Clés API et identifiants exposés en clair dans les scripts ou interfaces.",
+        cmp_r2: "Envoi de données clients confidentielles vers des modèles IA publics non cloisonnés.",
+        cmp_r3: "Automatisations instables qui cassent dès qu'une API ou un format évolue.",
+        cmp_r4: "Aucun contrôle des rôles ni vérification des failles de sécurité avant mise en ligne.",
+        cmp_right_title: "Standard AEGIFLOW",
+        cmp_right_badge: "Security by Design",
+        cmp_s1: "Chiffrement et protection stricte des clés API, webhooks et variables d'environnement.",
+        cmp_s2: "Architecture IA privée et cloisonnée : vos données restent 100 % sous votre contrôle.",
+        cmp_s3: "Code propre, gestion des erreurs avancée et solutions Web/Mobile/PC évolutives.",
+        cmp_s4: "Validation issue de la cybersécurité offensive (Pentest & Hardening) avant livraison.",
+        off_tag: "Formats d'intervention",
+        off_title: "Des déploiements structurés, rapides et orientés résultats.",
+        p1_step: "Étape 01 · Quick Win",
+        p1_title: "Audit Flash & 1er Flux",
+        p1_desc: "Cartographie de vos processus, vérification de sécurité de vos accès API et déploiement rapide d'une première automatisation clé en main.",
+        p1_b1: "Diagnostic complet des goulots d'étranglement",
+        p1_b2: "Vérification de sécurité des intégrations",
+        p1_b3: "1er système automatisé livré et opérationnel",
+        p1_cta: "Demander ce diagnostic",
+        p2_badge: "Solution Complète",
+        p2_step: "Étape 02 · Architecture",
+        p2_title: "Écosystème IA & Logiciel",
+        p2_desc: "Conception et déploiement intégral de vos agents IA, de vos flux automatisés et de vos applications métiers sous architecture Security by Design.",
+        p2_b1: "Agents IA, workflows & applications sur mesure",
+        p2_b2: "Cloisonnement des données & gestion des accès",
+        p2_b3: "Documentation technique & prise en main",
+        p2_cta: "Discutons de votre projet",
+        p3_step: "Étape 03 · Suivi continu",
+        p3_title: "Évolution & Sécurité Continue",
+        p3_desc: "Accompagnement mensuel pour faire évoluer vos outils IA, maintenir vos connecteurs API et garantir la protection continue de votre infrastructure.",
+        p3_b1: "Monitoring et optimisation des performances",
+        p3_b2: "Contrôles de sécurité et mises à jour régulières",
+        p3_b3: "Support technique prioritaire",
+        p3_cta: "En savoir plus",
+        f_role: "Fondateur @ AEGIFLOW",
+        f_loc: "France · Espagne · International",
+        f_linkedin: "Voir le profil LinkedIn",
+        f_tag: "À Propos",
+        f_title: "L'alliance de la cybersécurité, de l'ingénierie IA et du développement sur mesure.",
+        f_bio: "Spécialiste en cybersécurité (Pentest, défense active et durcissement système), en ingénierie d'Intelligence Artificielle (systèmes multi-agents, intégration LLM) et en développement logiciel complet (applications Web, Mobiles, PC/Desktop et automatisations complexes), j'ai fondé AEGIFLOW pour permettre aux entreprises en France, en Espagne et à l'international d'accélérer leurs opérations avec des architectures fiables, performantes et sécurisées dès la conception.",
+        kpi_1: "d'expérience",
+        kpi_2: "projets réalisés",
+        kpi_3: "satisfaction client",
+        kpi_4: "délais respectés",
+        kpi_5: "Qualité",
+        kpi_6: "Conformité",
+        cta_tag: "Contact & Diagnostic",
+        cta_title: "Discutons de votre projet d'automatisation et d'IA.",
+        cta_sub: "Expliquez-nous votre besoin via le formulaire sécurisé ci-contre ou contactez directement Ousmane Barry en message privé sur LinkedIn pour une réponse rapide.",
+        cta_btn_li: "Écrire directement sur LinkedIn",
+        cta_b1: "Réponse rapide & confidentialité totale garantie",
+        cta_b2: "Architecture sur mesure (IA, Automatisation, Web/Mobile/PC)",
+        cta_b3: "Accompagnement en France, Espagne & International (FR / EN / ES)",
+        form_name_l: "Nom complet *",
+        form_name_p: "Votre nom",
+        form_email_l: "Email professionnel *",
+        form_email_p: "nom@entreprise.com",
+        form_comp_l: "Entreprise (facultatif)",
+        form_comp_p: "Nom de votre structure",
+        form_msg_l: "Détails de votre projet *",
+        form_msg_p: "Décrivez brièvement les processus que vous souhaitez automatiser ou sécuriser...",
+        form_rgpd: "J'accepte que mes informations soient traitées par AEGIFLOW uniquement pour répondre à ma demande de contact (conformément à la politique de confidentialité).",
+        form_submit: "Envoyer ma demande",
+        form_sending: "Envoi en cours...",
+        form_ok: "Votre demande a bien été envoyée avec succès. Nous vous répondrons dans les plus brefs délais.",
+        form_err: "Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter sur LinkedIn.",
+        fab_contact_title: "Discuter de votre projet",
+        fab_top_title: "Retour en haut de page",
+        footer_copy: "© 2026 AEGIFLOW — Tous droits réservés.",
+        footer_legal: "Mentions légales",
+        footer_privacy: "Politique de confidentialité",
+        leg_title: "Mentions Légales",
+        leg_h1: "1. Éditeur du site",
+        leg_p1: "Le site www.aegiflow.eu est édité par AEGIFLOW (représenté par son fondateur Ousmane Barry, entrepreneur individuel). Contact direct via le formulaire du site ou via LinkedIn : linkedin.com/in/ousmane-barry.",
+        leg_h2: "2. Hébergement",
+        leg_p2: "Hébergement web : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.",
+        leg_h3: "3. Propriété intellectuelle",
+        leg_p3: "L'ensemble des éléments graphiques, textes, codes, logos et architectures présents sur le site www.aegiflow.eu sont la propriété exclusive d'AEGIFLOW. Toute reproduction sans autorisation préalable est interdite.",
+        prv_title: "Politique de Confidentialité (RGPD)",
+        prv_h1: "1. Collecte minimale des données",
+        prv_p1: "AEGIFLOW collecte uniquement les informations strictement nécessaires transmises volontairement via le formulaire de contact (nom, email professionnel, entreprise, description du besoin). Aucun cookie publicitaire ou traceur intrusif n'est utilisé sur ce site.",
+        prv_h2: "2. Finalité et traitement sécurisé",
+        prv_p2: "Les données transmises via le formulaire sont traitées de manière chiffrée et confidentielle uniquement pour répondre à votre demande. Vos données ne sont jamais vendues, louées ni cédées à des tiers.",
+        prv_h3: "3. Vos droits (Accès, rectification, suppression)",
+        prv_p3: "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de modification et de suppression de vos données sur simple demande via notre formulaire ou par message direct sur LinkedIn."
+      },
+      en: {
+        meta_title: "AEGIFLOW | Custom AI, Automation & Security by Design",
+        meta_desc: "Automate with custom AI while securing your business data: custom AI agents & LLMs, process automation, and native Security by Design.",
+        skip_link: "Skip to main content",
+        brand_sub: "AI + Automation + Security",
+        nav_exp: "Expertise",
+        nav_usecases: "Use Cases",
+        nav_why: "Why Us",
+        nav_offers: "Solutions",
+        nav_founder: "About",
+        nav_cta: "Let's discuss your project",
+        mob_nav_header: "AEGIFLOW · MENU",
+        mob_sub_exp: "AI, automations & software",
+        mob_sub_uc: "What we deploy",
+        mob_sub_why: "Security by Design standard",
+        mob_sub_off: "Engagement models",
+        mob_sub_fnd: "Ousmane Barry & Track Record",
+        mob_lang_label: "Site language / Langue :",
+        hero_pill: "· AI + Automation + Security",
+        hero_t1: "AUTOMATE WITH",
+        hero_t_highlight: "CUSTOM AI",
+        hero_t2: "WHILE SECURING YOUR DATA",
+        hero_sub: "We engineer and deploy custom AI agents, complex workflow automations, and secure software solutions (Web, Mobile & PC) built by design to accelerate your operations.",
+        hero_cta_1: "Let's discuss your project",
+        hero_cta_2: "Explore use cases",
+        hero_scope: "France · Spain · International",
+        orb_1_t: "Custom AI Agents & LLMs",
+        orb_1_d: "Multi-agent systems and models tailored to your operations.",
+        orb_2_t: "Automation & APIs",
+        orb_2_d: "Seamless interconnection of your tools, CRMs, and business apps.",
+        orb_3_t: "Security by Design",
+        orb_3_d: "API key protection, strict access control, and data isolation.",
+        exp_tag: "Core Expertise",
+        exp_title: "End-to-end engineering: AI, Automation, Software & Security.",
+        c1_title: "Custom AI Agents & LLMs",
+        c1_desc: "Design of multi-agent systems and private LLM integrations to automate document processing, lead qualification, and internal workflows.",
+        c1_b1: "Autonomous multi-agent systems",
+        c1_b2: "Secure API-based LLM integration",
+        c1_b3: "Zero data leakage to public models",
+        c2_title: "Automation & Web / Mobile / PC Dev",
+        c2_desc: "Development of complex workflows, API interconnections, and custom web, mobile, and desktop applications to centralize your operations.",
+        c2_b1: "Complex workflows & API interconnection",
+        c2_b2: "Custom Web, Mobile & Desktop (PC) apps",
+        c2_b3: "CRM, ERP & Database synchronization",
+        c3_title: "Security by Design & Cybersecurity",
+        c3_desc: "Every architecture is hardened from day one: strict API key protection, granular role management, system hardening, and active defense.",
+        c3_b1: "Strict secrets & API key protection",
+        c3_b2: "System & infrastructure hardening",
+        c3_b3: "Offensive auditing & vulnerability remediation",
+        uc_tag: "Concrete Use Cases",
+        uc_title: "What we deploy in your business.",
+        uc_sub: "Operational architectures engineered to eliminate repetitive tasks without ever exposing your sensitive assets.",
+        uc1_title: "AI Document Triage & Extraction",
+        uc1_desc: "Automated analysis of contracts, invoices, emails, and attachments by a private AI agent, structured data extraction, and direct injection into your CRM/ERP.",
+        uc1_b1: "Instant 24/7 error-free processing",
+        uc1_b2: "Strict isolation of sensitive files",
+        uc1_b3: "Direct connection to your databases",
+        uc2_title: "Internal Assistants & Multi-Agents",
+        uc2_desc: "Deployment of AI agents connected to your company's internal knowledge base and tools, with granular role-based access control for each team member.",
+        uc2_b1: "Real-time enterprise search and synthesis",
+        uc2_b2: "Role-Based Access Control (RBAC)",
+        uc2_b3: "Zero data used to train external models",
+        uc3_title: "Client Pipelines & Custom Apps",
+        uc3_desc: "End-to-end automation from first contact to client onboarding: AI lead qualification, document generation, dedicated web/mobile portals, and automated follow-up.",
+        uc3_b1: "Instant lead qualification and response",
+        uc3_b2: "Custom Web, Mobile, or Desktop portals",
+        uc3_b3: "End-to-end encrypted API workflows",
+        cmp_tag: "Why Choose AEGIFLOW?",
+        cmp_title: "The difference between fragile setups and Security by Design architecture.",
+        cmp_left_title: "Standard AI Integration",
+        cmp_left_badge: "High Risk",
+        cmp_r1: "API keys and credentials exposed in plain text within scripts or interfaces.",
+        cmp_r2: "Confidential client data sent directly to unisolated public AI models.",
+        cmp_r3: "Brittle automations that break whenever an API or data format changes.",
+        cmp_r4: "Zero role control or security vulnerability testing prior to deployment.",
+        cmp_right_title: "AEGIFLOW Standard",
+        cmp_right_badge: "Security by Design",
+        cmp_s1: "Strict encryption and protection of API keys, webhooks, and environment variables.",
+        cmp_s2: "Private, isolated AI architecture: your data remains 100% under your control.",
+        cmp_s3: "Clean code, advanced error handling, and scalable Web/Mobile/PC solutions.",
+        cmp_s4: "Offensive cybersecurity validation (Pentest & Hardening) before delivery.",
+        off_tag: "Engagement Models",
+        off_title: "Structured, fast, and results-driven deployments.",
+        p1_step: "Step 01 · Quick Win",
+        p1_title: "Flash Audit & 1st Workflow",
+        p1_desc: "Full mapping of your processes, security check of your API access, and rapid turnkey deployment of your first automation.",
+        p1_b1: "Complete bottleneck diagnostic",
+        p1_b2: "Security verification of integrations",
+        p1_b3: "1st automated system delivered live",
+        p1_cta: "Request this diagnostic",
+        p2_badge: "Complete Solution",
+        p2_step: "Step 02 · Architecture",
+        p2_title: "AI & Software Ecosystem",
+        p2_desc: "Full design and deployment of your custom AI agents, automated workflows, and business applications under Security by Design.",
+        p2_b1: "Custom AI agents, workflows & applications",
+        p2_b2: "Data isolation & role-based access control",
+        p2_b3: "Technical documentation & team onboarding",
+        p2_cta: "Let's discuss your project",
+        p3_step: "Step 03 · Ongoing Support",
+        p3_title: "Continuous Scale & Security",
+        p3_desc: "Monthly partnership to evolve your AI tools, maintain API connectors, and ensure continuous protection of your infrastructure.",
+        p3_b1: "Performance monitoring and optimization",
+        p3_b2: "Regular security checks and updates",
+        p3_b3: "Priority engineering support",
+        p3_cta: "Learn more",
+        f_role: "Founder @ AEGIFLOW",
+        f_loc: "France · Spain · International",
+        f_linkedin: "View LinkedIn Profile",
+        f_tag: "About",
+        f_title: "Bridging cybersecurity, AI engineering, and custom software development.",
+        f_bio: "Specialist in cybersecurity (Pentesting, active defense, and system hardening), Artificial Intelligence engineering (multi-agent systems, LLM integration), and full-stack software development (Web, Mobile, PC/Desktop applications, and complex automations). I founded AEGIFLOW to help companies in France, Spain, and internationally accelerate their operations with reliable, high-performance architectures secured by design.",
+        kpi_1: "years of experience",
+        kpi_2: "completed projects",
+        kpi_3: "client satisfaction",
+        kpi_4: "deadlines met",
+        kpi_5: "Quality",
+        kpi_6: "Compliance",
+        cta_tag: "Contact & Diagnostic",
+        cta_title: "Let's discuss your AI and automation project.",
+        cta_sub: "Share your project details via the secure form or reach out directly to Ousmane Barry via LinkedIn private message for a fast response.",
+        cta_btn_li: "Message directly on LinkedIn",
+        cta_b1: "Fast response & strict confidentiality guaranteed",
+        cta_b2: "Tailored architecture (AI, Automation, Web/Mobile/PC)",
+        cta_b3: "Operating across France, Spain & Internationally (FR / EN / ES)",
+        form_name_l: "Full Name *",
+        form_name_p: "Your name",
+        form_email_l: "Work Email *",
+        form_email_p: "name@company.com",
+        form_comp_l: "Company (optional)",
+        form_comp_p: "Your company name",
+        form_msg_l: "Project Details *",
+        form_msg_p: "Briefly describe the processes you want to automate or secure...",
+        form_rgpd: "I agree that my information will be processed by AEGIFLOW solely to respond to my inquiry (in accordance with the privacy policy).",
+        form_submit: "Send my request",
+        form_sending: "Sending...",
+        form_ok: "Your request has been successfully submitted. We will get back to you promptly.",
+        form_err: "An error occurred while sending. Please try again or reach out on LinkedIn.",
+        fab_contact_title: "Discuss your project",
+        fab_top_title: "Back to top",
+        footer_copy: "© 2026 AEGIFLOW — All rights reserved.",
+        footer_legal: "Legal Notice",
+        footer_privacy: "Privacy Policy",
+        leg_title: "Legal Notice",
+        leg_h1: "1. Site Publisher",
+        leg_p1: "The website www.aegiflow.eu is published by AEGIFLOW (represented by its founder Ousmane Barry). Direct contact via the website form or LinkedIn: linkedin.com/in/ousmane-barry.",
+        leg_h2: "2. Hosting",
+        leg_p2: "Website hosting: Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.",
+        leg_h3: "3. Intellectual Property",
+        leg_p3: "All graphics, texts, code, logos, and architectures on www.aegiflow.eu are the exclusive property of AEGIFLOW. Any unauthorized reproduction is strictly prohibited.",
+        prv_title: "Privacy Policy (GDPR)",
+        prv_h1: "1. Minimal Data Collection",
+        prv_p1: "AEGIFLOW only collects information voluntarily submitted through the contact form (name, work email, company, project scope). No advertising cookies or intrusive trackers are used.",
+        prv_h2: "2. Purpose and Secure Processing",
+        prv_p2: "Data submitted via the form is encrypted and securely processed solely to respond to your inquiry. Your data is never sold, rented, or shared with third parties.",
+        prv_h3: "3. Your Rights (Access, Rectification, Deletion)",
+        prv_p3: "Under the GDPR, you have the right to access, modify, or delete your personal data at any time by contacting us via the form or on LinkedIn."
+      },
+      es: {
+        meta_title: "AEGIFLOW | IA a medida, Automatización y Security by Design",
+        meta_desc: "Automatice con IA a medida asegurando los datos de su empresa: agentes IA y LLMs, automatización de procesos y Security by Design.",
+        skip_link: "Ir al contenido principal",
+        brand_sub: "IA + Automatización + Seguridad",
+        nav_exp: "Especialidades",
+        nav_usecases: "Casos de uso",
+        nav_why: "Por qué elegirnos",
+        nav_offers: "Soluciones",
+        nav_founder: "Sobre mí",
+        nav_cta: "Hablemos de su proyecto",
+        mob_nav_header: "AEGIFLOW · MENÚ",
+        mob_sub_exp: "IA, automatizaciones y software",
+        mob_sub_uc: "Lo que desplegamos",
+        mob_sub_why: "Estándar Security by Design",
+        mob_sub_off: "Formatos de intervención",
+        mob_sub_fnd: "Ousmane Barry y Trayectoria",
+        mob_lang_label: "Idioma del sitio / Language :",
+        hero_pill: "· IA + Automatización + Seguridad",
+        hero_t1: "AUTOMATICE CON",
+        hero_t_highlight: "IA A MEDIDA",
+        hero_t2: "ASEGURANDO TODOS SUS DATOS",
+        hero_sub: "Diseñamos y desplegamos agentes de IA, automatizaciones complejas y soluciones de software (Web, Móvil y PC) blindadas desde su concepción para acelerar su negocio.",
+        hero_cta_1: "Hablemos de su proyecto",
+        hero_cta_2: "Ver casos de uso",
+        hero_scope: "Francia · España · Internacional",
+        orb_1_t: "Agentes IA y LLMs a medida",
+        orb_1_d: "Sistemas multi-agente y modelos adaptados a su operativa.",
+        orb_2_t: "Automatización y APIs",
+        orb_2_d: "Interconexión fluida de sus herramientas, CRM y software.",
+        orb_3_t: "Security by Design",
+        orb_3_d: "Protección de claves API, control de accesos y aislamiento.",
+        exp_tag: "Nuestras Especialidades",
+        exp_title: "Ingeniería integral: IA, Automatización, Software y Seguridad.",
+        c1_title: "Agentes IA y LLMs a medida",
+        c1_desc: "Diseño de sistemas multi-agente e integración de modelos LLM privados para automatizar el procesamiento documental, la cualificación de clientes y sus operaciones.",
+        c1_b1: "Sistemas multi-agente autónomos",
+        c1_b2: "Integración segura de LLM por API",
+        c1_b3: "Cero fugas hacia modelos públicos",
+        c2_title: "Automatización y Dev Web / Móvil / PC",
+        c2_desc: "Desarrollo de flujos complejos, interconexiones API y creación de aplicaciones web, móviles y software de escritorio (PC) a medida para centralizar su actividad.",
+        c2_b1: "Workflows complejos e interconexión API",
+        c2_b2: "Aplicaciones Web, Móviles y Desktop (PC)",
+        c2_b3: "Sincronización CRM, ERP y Bases de datos",
+        c3_title: "Security by Design y Ciberseguridad",
+        c3_desc: "Cada arquitectura nace blindada: protección estricta de claves API, gestión granular de roles, hardening de sistemas y defensa activa.",
+        c3_b1: "Protección de claves API y secretos",
+        c3_b2: "Hardening de sistemas e infraestructuras",
+        c3_b3: "Auditoría ofensiva y eliminación de fallos",
+        uc_tag: "Casos de Uso Concretos",
+        uc_title: "Lo que desplegamos de forma práctica en su empresa.",
+        uc_sub: "Arquitecturas operativas diseñadas para eliminar tareas manuales sin exponer jamás su información sensible.",
+        uc1_title: "Clasificación y Procesamiento Documental IA",
+        uc1_desc: "Análisis automático de contratos, facturas, correos y adjuntos mediante un agente IA privado, extracción estructurada e inyección directa en su CRM o ERP.",
+        uc1_b1: "Procesamiento instantáneo 24/7 sin errores",
+        uc1_b2: "Aislamiento estricto de archivos sensibles",
+        uc1_b3: "Conexión directa con sus bases de datos",
+        uc2_title: "Asistentes Internos y Multi-Agentes",
+        uc2_desc: "Despliegue de agentes IA conectados a la base de conocimiento y herramientas de su empresa, con control granular de permisos según el rol de cada empleado.",
+        uc2_b1: "Búsqueda y síntesis operativa en tiempo real",
+        uc2_b2: "Control de acceso basado en roles (RBAC)",
+        uc2_b3: "Ningún dato se usa para entrenar modelos externos",
+        uc3_title: "Pipeline Comercial y Apps a Medida",
+        uc3_desc: "Automatización integral desde el primer contacto hasta el onboarding: cualificación con IA, generación documental, portal web/móvil propio y seguimiento automático.",
+        uc3_b1: "Cualificación y respuesta instantánea a leads",
+        uc3_b2: "Portales Web, Móvil o Desktop a medida",
+        uc3_b3: "Flujos API asegurados de extremo a extremo",
+        cmp_tag: "¿Por qué elegir AEGIFLOW?",
+        cmp_title: "La diferencia entre un parche frágil y una arquitectura Security by Design.",
+        cmp_left_title: "Integración IA Clásica",
+        cmp_left_badge: "Riesgo Alto",
+        cmp_r1: "Claves API y credenciales expuestas en texto plano en scripts o interfaces.",
+        cmp_r2: "Envío de datos confidenciales de clientes a modelos de IA públicos sin aislar.",
+        cmp_r3: "Automatizaciones inestables que se rompen en cuanto cambia una API.",
+        cmp_r4: "Sin control de roles ni pruebas de vulnerabilidades antes de salir a producción.",
+        cmp_right_title: "Estándar AEGIFLOW",
+        cmp_right_badge: "Security by Design",
+        cmp_s1: "Cifrado y protección estricta de claves API, webhooks y variables de entorno.",
+        cmp_s2: "Arquitectura IA privada y aislada: sus datos permanecen 100% bajo su control.",
+        cmp_s3: "Código limpio, manejo avanzado de errores y soluciones Web/Móvil/PC escalables.",
+        cmp_s4: "Validación de ciberseguridad ofensiva (Pentest y Hardening) antes de entregar.",
+        off_tag: "Formatos de Intervención",
+        off_title: "Despliegues estructurados, rápidos y orientados a resultados.",
+        p1_step: "Paso 01 · Quick Win",
+        p1_title: "Auditoría Flash y 1er Flujo",
+        p1_desc: "Mapeo de sus procesos, verificación de seguridad de sus accesos API y despliegue rápido de una primera automatización llave en mano.",
+        p1_b1: "Diagnóstico completo de cuellos de botella",
+        p1_b2: "Verificación de seguridad de integraciones",
+        p1_b3: "1er sistema automatizado entregado y operativo",
+        p1_cta: "Solicitar este diagnóstico",
+        p2_badge: "Solución Completa",
+        p2_step: "Paso 02 · Arquitectura",
+        p2_title: "Ecosistema IA y Software",
+        p2_desc: "Diseño y despliegue integral de sus agentes de IA, flujos automatizados y aplicaciones de negocio bajo arquitectura Security by Design.",
+        p2_b1: "Agentes IA, workflows y aplicaciones a medida",
+        p2_b2: "Aislamiento de datos y control de accesos",
+        p2_b3: "Documentación técnica y formación práctica",
+        p2_cta: "Hablemos de su proyecto",
+        p3_step: "Paso 03 · Evolución Continua",
+        p3_title: "Evolución y Seguridad Continua",
+        p3_desc: "Acompañamiento mensual para escalar sus herramientas de IA, mantener sus conectores API y garantizar la protección continua de su infraestructura.",
+        p3_b1: "Monitorización y optimización de rendimiento",
+        p3_b2: "Controles de seguridad y actualizaciones periódicas",
+        p3_b3: "Soporte técnico prioritario",
+        p3_cta: "Más información",
+        f_role: "Fundador @ AEGIFLOW",
+        f_loc: "Francia · España · Internacional",
+        f_linkedin: "Ver perfil de LinkedIn",
+        f_tag: "Sobre Mí",
+        f_title: "La unión entre ciberseguridad, ingeniería de IA y desarrollo a medida.",
+        f_bio: "Especialista en ciberseguridad (Pentest, defensa activa y hardening de sistemas), ingeniería de Inteligencia Artificial (sistemas multi-agente, integración de LLMs) y desarrollo completo de software (aplicaciones Web, Móviles, PC/Desktop y automatizaciones complejas). Fundé AEGIFLOW para permitir a las empresas en Francia, España e internacionalmente acelerar sus operaciones con arquitecturas fiables, potentes y seguras desde el diseño.",
+        kpi_1: "de experiencia",
+        kpi_2: "proyectos realizados",
+        kpi_3: "satisfacción cliente",
+        kpi_4: "plazos cumplidos",
+        kpi_5: "Calidad",
+        kpi_6: "Conformidad",
+        cta_tag: "Contacto y Diagnóstico",
+        cta_title: "Hablemos sobre su proyecto de automatización e IA.",
+        cta_sub: "Explíquenos su necesidad mediante el formulario seguro o contacte directamente con Ousmane Barry por mensaje privado en LinkedIn para una respuesta rápida.",
+        cta_btn_li: "Escribir directamente en LinkedIn",
+        cta_b1: "Respuesta rápida y confidencialidad total garantizada",
+        cta_b2: "Arquitectura a medida (IA, Automatización, Web/Móvil/PC)",
+        cta_b3: "Intervenciones en Francia, España e Internacional (FR / EN / ES)",
+        form_name_l: "Nombre completo *",
+        form_name_p: "Su nombre",
+        form_email_l: "Email profesional *",
+        form_email_p: "nombre@empresa.com",
+        form_comp_l: "Empresa (opcional)",
+        form_comp_p: "Nombre de su empresa",
+        form_msg_l: "Detalles de su proyecto *",
+        form_msg_p: "Describa brevemente los procesos que desea automatizar o asegurar...",
+        form_rgpd: "Acepto que mis datos sean tratados por AEGIFLOW únicamente para responder a mi solicitud de contacto (conforme a la política de privacidad).",
+        form_submit: "Enviar mi solicitud",
+        form_sending: "Enviando...",
+        form_ok: "Su solicitud ha sido enviada con éxito. Le responderemos a la mayor brevedad.",
+        form_err: "Ocurrió un error al enviar. Por favor intente de nuevo o contáctenos por LinkedIn.",
+        fab_contact_title: "Hablar sobre su proyecto",
+        fab_top_title: "Subir al inicio",
+        footer_copy: "© 2026 AEGIFLOW — Todos los derechos reservados.",
+        footer_legal: "Aviso legal",
+        footer_privacy: "Política de privacidad",
+        leg_title: "Aviso Legal",
+        leg_h1: "1. Editor del sitio web",
+        leg_p1: "El sitio web www.aegiflow.eu está editado por AEGIFLOW (representado por su fundador Ousmane Barry). Contacto directo mediante el formulario del sitio o vía LinkedIn: linkedin.com/in/ousmane-barry.",
+        leg_h2: "2. Alojamiento web",
+        leg_p2: "Alojamiento web: Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.",
+        leg_h3: "3. Propiedad intelectual",
+        leg_p3: "Todos los elementos gráficos, textos, códigos, logotipos y arquitecturas presentes en www.aegiflow.eu son propiedad exclusiva de AEGIFLOW. Queda prohibida su reproducción sin autorización previa.",
+        prv_title: "Política de Privacidad (RGPD)",
+        prv_h1: "1. Recogida mínima de datos",
+        prv_p1: "AEGIFLOW recoge únicamente la información estrictamente necesaria enviada voluntariamente mediante el formulario de contacto (nombre, email profesional, empresa, descripción del proyecto). No se utilizan cookies publicitarias ni rastreadores intrusivos.",
+        prv_h2: "2. Finalidad y tratamiento seguro",
+        prv_p2: "Los datos enviados a través del formulario se tratan de forma cifrada y confidencial únicamente para dar respuesta a su solicitud. Sus datos nunca se venden, alquilan ni ceden a terceros.",
+        prv_h3: "3. Sus derechos (Acceso, rectificación, supresión)",
+        prv_p3: "Conforme al Reglamento General de Protección de Datos (RGPD), puede ejercer sus derechos de acceso, rectificación o eliminación de sus datos en cualquier momento a través de nuestro formulario o por LinkedIn."
+      }
+    };
+
+    let currentLang = 'fr';
+
+    // Función de cambio de idioma reactiva (actualiza PC y Móvil simultáneamente)
+    function setLanguage(lang) {
+      if (!i18n[lang]) return;
+      currentLang = lang;
+
+      // 1. Actualizar textos con atributo data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang][key]) el.textContent = i18n[lang][key];
+      });
+
+      // 2. Actualizar placeholders del formulario
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (i18n[lang][key]) el.setAttribute('placeholder', i18n[lang][key]);
+      });
+
+      // 3. Actualizar títulos de botones flotantes (FAB)
+      document.querySelectorAll('[data-i18n-title]').forEach(el => {
+        const key = el.getAttribute('data-i18n-title');
+        if (i18n[lang][key]) {
+          el.setAttribute('title', i18n[lang][key]);
+          el.setAttribute('aria-label', i18n[lang][key]);
+        }
+      });
+
+      // 4. Actualizar SEO dinámico
+      document.title = i18n[lang].meta_title;
+      const desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.setAttribute('content', i18n[lang].meta_desc);
+
+      // 5. Botones activos en PC y Móvil
+      document.querySelectorAll('[data-lang]').forEach(btn => {
+        const code = btn.getAttribute('data-lang');
+        const isActive = code === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      document.documentElement.lang = lang;
+    }
+
+    // GESTIÓN DINÁMICA DEL MENÚ MÓVIL / TABLET Y SCROLL
+    const mainNavbar = document.getElementById('main-navbar');
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const mobileBackdrop = document.getElementById('mobile-nav-backdrop');
+
+    function toggleMobileNav() {
+      if (!navToggle || !mobileNav) return;
+      const isOpen = navToggle.classList.toggle('open');
+      mobileNav.classList.toggle('open', isOpen);
+      if (mobileBackdrop) mobileBackdrop.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      mobileNav.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    function closeMobileNav() {
+      if (navToggle && navToggle.classList.contains('open')) {
+        navToggle.classList.remove('open');
+        mobileNav.classList.remove('open');
+        if (mobileBackdrop) mobileBackdrop.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Cerrar automáticamente el drawer si el usuario gira la tablet o pasa a pantalla PC (>= 1100px)
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1100) {
+        closeMobileNav();
+      }
+    }, { passive: true });
+
+    // Efecto dinámico en el Header al hacer scroll + botón Back-to-Top
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (mainNavbar) {
+        mainNavbar.classList.toggle('scrolled', y > 20);
+      }
+      const fabTop = document.getElementById('fab-back-to-top');
+      if (fabTop) {
+        fabTop.classList.toggle('visible', y > 280);
+      }
+    }, { passive: true });
+
+    // Resaltado dinámico de la sección activa en el Dock de PC (ScrollSpy con IntersectionObserver)
+    const sections = document.querySelectorAll('main section[id]');
+    const dockLinks = document.querySelectorAll('.nav-dock-link[data-section]');
+    if ('IntersectionObserver' in window && sections.length && dockLinks.length) {
+      const spyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            dockLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('data-section') === id);
+            });
+          }
+        });
+      }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+
+      sections.forEach(sec => spyObserver.observe(sec));
+    }
+
+    // GESTIÓN DE BOTONES FLOTANTES (FAB)
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function focusContactInput(event) {
+      setTimeout(() => {
+        const nameInput = document.getElementById('f-name');
+        if (nameInput) nameInput.focus();
+      }, 500);
+    }
+
+    // GESTIÓN DE MODALES POPUP (LEGAL & PRIVACIDAD)
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function closeOnBackdrop(event, id) {
+      if (event.target.id === id) closeModal(id);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal('modal-legal');
+        closeModal('modal-privacy');
+        closeMobileNav();
+      }
+    });
+
+    // PROCESAMIENTO SEGURO DEL FORMULARIO CON LA FUNCIÓN SERVERLESS /api/contact
+    async function handleContactSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const statusBox = document.getElementById('form-status');
+      const submitBtn = document.getElementById('form-submit-btn');
+
+      // 1. Verificación Honeypot anti-bots
+      if (form.website_hp && form.website_hp.value.trim() !== "") return;
+
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = i18n[currentLang].form_sending || "Envoi en cours...";
+
+      const payload = {
+        name: form.NAME.value.trim(),
+        email: form.EMAIL.value.trim(),
+        company: form.COMPANY ? form.COMPANY.value.trim() : "",
+        message: form.MESSAGE.value.trim(),
+        lang: currentLang,
+        website_hp: form.website_hp ? form.website_hp.value : ""
+      };
+
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json().catch(() => ({}));
+
+        if (response.ok && data.success) {
+          statusBox.textContent = i18n[currentLang].form_ok;
+          statusBox.className = "form-status success";
+          form.reset();
+        } else {
+          statusBox.textContent = data.error || i18n[currentLang].form_err;
+          statusBox.className = "form-status error";
+        }
+      } catch (err) {
+        console.error("Erreur d'envoi:", err);
+        statusBox.textContent = i18n[currentLang].form_err;
+        statusBox.className = "form-status error";
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    }
+
+    // Detección inicial del parámetro de URL ?lang=
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const langParam = urlParams.get('lang');
+      if (langParam && ['fr', 'en', 'es'].includes(langParam)) {
+        setLanguage(langParam);
+      }
+    });
+  </script>
+</body>
+
+</html>

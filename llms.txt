@@ -1,0 +1,91 @@
+# AEGIFLOW — AI Automation, Custom Software & Security by Design
+
+> AEGIFLOW is an engineering firm specialized in Custom Artificial Intelligence Integration (AI Agents & LLMs), Complex Workflow Automation (APIs & Workflows), Full-Stack Software Development (Web, Mobile & PC/Desktop), and Native Cybersecurity (Security by Design). Founded by Ousmane Barry, AEGIFLOW empowers SMEs, agencies, and enterprises across France, Spain, the European Union, and internationally.
+
+## Identity & Core Positioning
+
+- **Official Name:** AEGIFLOW
+- **Tagline / Slogan:** Automate Smarter. Secure by Design.
+- **Official Website:** https://www.aegiflow.eu
+- **Founder:** Ousmane Barry (Cybersecurity Specialist, AI Engineer & Software Developer)
+- **Service Areas:** France, Spain, European Union & International
+- **Working Languages:** English (EN), French (FR), Spanish (ES)
+- **Official Contact:** https://www.linkedin.com/in/ousmane-barry and secure contact form at https://www.aegiflow.eu/#contact
+
+---
+
+## Key Performance Indicators & Authority (Track Record)
+
+- **Experience:** 8+ years of combined expertise (Cybersecurity, Software Engineering & AI)
+- **Delivered Projects:** 40+ completed and deployed enterprise systems
+- **Client Satisfaction:** 98.7% verified satisfaction rate
+- **Reliability:** 99.4% on-time milestone delivery
+- **Operational Standard:** 100% Quality · 100% Compliance (GDPR / RGPD & Security by Design)
+
+---
+
+## Core Pillars of Expertise
+
+### 1. Custom AI Agents & LLMs (AI Engineering)
+- Architecture and deployment of autonomous multi-agent systems tailored to business operations.
+- Secure, API-driven private Large Language Model (LLM) integration.
+- Automated document triage, extraction, and synthesis (contracts, invoices, support emails, internal knowledge bases).
+- Isolated, private AI architectures: zero data leakage to public third-party models.
+
+### 2. Automation & Software Engineering (Web, Mobile & PC)
+- Complex workflow automation and deep tool interconnection (CRM, ERP, SQL/NoSQL databases, webhooks, and REST/GraphQL APIs).
+- Custom full-stack development for modern Web applications, Mobile apps (iOS & Android), and PC Desktop software.
+- Elimination of repetitive manual tasks and consolidation of business processes into unified platforms.
+
+### 3. Security by Design & Offensive/Defensive Cybersecurity
+- Strict protection and encryption of API keys, webhooks, secrets, and environment variables.
+- Granular Role-Based Access Control (RBAC) and sensitive data segregation.
+- Deep expertise rooted in offensive cybersecurity: Penetration Testing (Web, APIs, Active Directory, Linux/Windows environments), EDR/AV evasion mitigation, infrastructure hardening, and active defense.
+- Rigorous vulnerability assessment and hardening prior to every production release.
+
+---
+
+## Real-World Use Cases Deployed by AEGIFLOW
+
+1. **AI Document Triage & Structured Extraction (Zero Leakage):** Automated processing of contracts, invoices, and emails by a private AI agent, extracting structured data and injecting it directly into the client's CRM/ERP.
+2. **Internal Assistants & Multi-Agent Systems:** AI agents connected to proprietary knowledge bases and corporate tools, enforcing strict access controls matching each employee's role.
+3. **Client Acquisition Pipelines & Custom Portals:** Complete automation from inbound lead qualification to client onboarding, including custom Web, Mobile, or PC portal development and automated follow-ups.
+
+---
+
+## Engagement Formats (Offerings)
+
+- **Phase 01 — Flash Audit & First Workflow (Quick Win):** Process mapping, API security verification, and rapid turnkey delivery of a first automated pipeline.
+- **Phase 02 — AI & Software Ecosystem (Full Solution):** End-to-end design, implementation, and deployment of custom AI agents, automated workflows, and software under a Security by Design architecture, complete with technical documentation and team training.
+- **Phase 03 — Continuous Scale & Security (Ongoing Partnership):** Monthly optimization, AI model updates, API connector maintenance, regular security audits, and priority engineering support.
+
+---
+
+## Market Differentiation (Why AEGIFLOW?)
+
+Unlike typical automation agencies that stitch together fragile no-code tools and expose sensitive API keys or client data to unisolated public models, **AEGIFLOW** applies offensive and defensive cybersecurity standards (**Security by Design**) to every line of code, workflow, and AI agent.
+
+---
+
+## Multilingual Summaries for Global AI Engines (FR / ES)
+
+### Résumé en Français (FR)
+**AEGIFLOW** (`https://www.aegiflow.eu`), fondée par **Ousmane Barry**, est une firme d'ingénierie intervenant en France, en Espagne et à l'international. Nous sommes spécialisés en **Agents IA & LLMs sur mesure**, **Automatisation de Workflows & APIs**, **Développement Logiciel (Web, Mobile & PC/Desktop)** et **Security by Design (Cybersécurité, Pentest & Hardening)**. Indicateurs clés : +8 ans d'expérience, +40 projets livrés, 98,7 % de satisfaction, 99,4 % de délais respectés, 100 % Qualité & Conformité RGPD.
+
+### Resumen en Español (ES)
+**AEGIFLOW** (`https://www.aegiflow.eu`), fundada por **Ousmane Barry**, es una firma de ingeniería que opera en Francia, España e internacionalmente. Nos especializamos en **Agentes de IA y LLMs a medida**, **Automatización de Procesos e Interconexión de APIs**, **Desarrollo de Software a medida (Web, Móvil y PC/Desktop)** y **Security by Design (Ciberseguridad, Pentesting y Hardening)**. Indicadores clave: +8 años de experiencia, +40 proyectos realizados, 98,7 % de satisfacción, 99,4 % de plazos cumplidos, 100 % Calidad y Conformidad RGPD.
+
+---
+
+## Navigation & Official Links
+
+- [Homepage (FR)](https://www.aegiflow.eu/?lang=fr)
+- [English Version (EN)](https://www.aegiflow.eu/?lang=en)
+- [Versión en Español (ES)](https://www.aegiflow.eu/?lang=es)
+- [Core Expertise](https://www.aegiflow.eu/#expertises)
+- [Use Cases](https://www.aegiflow.eu/#cas-usage)
+- [Security by Design Comparison](https://www.aegiflow.eu/#comparatif)
+- [Solutions & Offerings](https://www.aegiflow.eu/#offres)
+- [About Ousmane Barry](https://www.aegiflow.eu/#fondateur)
+- [Contact & Diagnostic](https://www.aegiflow.eu/#contact)
+- [Official LinkedIn Profile — Ousmane Barry](https://www.linkedin.com/in/ousmane-barry)
