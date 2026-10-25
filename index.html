@@ -1157,25 +1157,15 @@
       background: var(--bg-card-solid);
       border: 1px solid var(--border-cyan);
       border-radius: 1.25rem;
-      padding: 2rem 1.5rem;
+      padding: 2.25rem 1.75rem;
       text-align: center;
       box-shadow: 0 0 35px rgba(0, 68, 255, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .founder-avatar {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 1rem;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--blue-electric), var(--cyan-neon));
-      color: #01030A;
-      font-family: var(--font-display);
-      font-size: 1.65rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 25px rgba(0, 240, 255, 0.45);
+    .founder-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(0, 240, 255, 0.25);
     }
 
     .kpi-grid {
@@ -2097,19 +2087,24 @@
     <section id="fondateur" class="section">
       <div class="container founder-grid">
         <div class="founder-card">
-          <div class="founder-avatar" aria-hidden="true">OB</div>
-          <h3 style="font-family: var(--font-display); font-size: 1.35rem;">Ousmane Barry</h3>
-          <p style="color: var(--cyan-neon); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.3rem;"
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; letter-spacing: -0.01em;">Ousmane Barry</h3>
+          <p style="color: var(--cyan-neon); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.35rem;"
             data-i18n="f_role">
             Fondateur @ AEGIFLOW
           </p>
-          <p style="color: var(--text-muted); font-size: 0.84rem; margin-top: 0.55rem;" data-i18n="f_loc">
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.55rem;" data-i18n="f_loc">
             France · Espagne · International
           </p>
-          <div style="margin-top: 1.25rem;">
+          <div style="margin-top: 1.35rem;">
             <a href="https://www.linkedin.com/in/ousmane-barry" target="_blank" rel="noopener noreferrer"
-              class="btn-outline" style="padding: 0.55rem 1.2rem; font-size: 0.8rem;" data-i18n="f_linkedin">
-              Voir le profil LinkedIn
+              class="btn-outline"
+              style="padding: 0.55rem 1.25rem; font-size: 0.82rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                style="color: var(--cyan-neon); flex-shrink: 0;">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 0 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.4 9.74v-8.37H5.06v8.37z" />
+              </svg>
+              <span data-i18n="f_linkedin">Voir le profil LinkedIn</span>
             </a>
           </div>
         </div>
@@ -2279,14 +2274,16 @@
       <h3 id="legal-title" data-i18n="leg_title">Mentions Légales</h3>
       <div class="modal-content">
         <h4 data-i18n="leg_h1">1. Éditeur du site</h4>
-        <p data-i18n="leg_p1">Le site www.aegiflow.eu est édité par AEGIFLOW (représenté par son fondateur Ousmane Barry,
+        <p data-i18n="leg_p1">Le site www.aegiflow.eu est édité par AEGIFLOW (représenté par son fondateur Ousmane
+          Barry,
           entrepreneur individuel). Contact direct via le formulaire du site ou via LinkedIn :
           linkedin.com/in/ousmane-barry.</p>
         <h4 data-i18n="leg_h2">2. Hébergement</h4>
         <p data-i18n="leg_p2">Hébergement web : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.</p>
         <h4 data-i18n="leg_h3">3. Propriété intellectuelle</h4>
         <p data-i18n="leg_p3">L'ensemble des éléments graphiques, textes, codes, logos et architectures présents sur le
-          site www.aegiflow.eu sont la propriété exclusive d'AEGIFLOW. Toute reproduction sans autorisation préalable est
+          site www.aegiflow.eu sont la propriété exclusive d'AEGIFLOW. Toute reproduction sans autorisation préalable
+          est
           interdite.</p>
       </div>
     </div>
@@ -2304,7 +2301,9 @@
           volontairement via le formulaire de contact (nom, email professionnel, entreprise, description du besoin).
           Aucun cookie publicitaire ou traceur intrusif n'est utilisé sur ce site.</p>
         <h4 data-i18n="prv_h2">2. Finalité et traitement sécurisé</h4>
-        <p data-i18n="prv_p2">Les données soumises via le formulaire sont transmises de manière chiffrée et confidentielle uniquement pour répondre à votre demande. Vos données ne sont jamais vendues, louées ni cédées à des tiers.</p>
+        <p data-i18n="prv_p2">Les données soumises via le formulaire sont transmises de manière chiffrée et
+          confidentielle uniquement pour répondre à votre demande. Vos données ne sont jamais vendues, louées ni cédées
+          à des tiers.</p>
         <h4 data-i18n="prv_h3">3. Vos droits (Accès, rectification, suppression)</h4>
         <p data-i18n="prv_p3">Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un
           droit d'accès, de modification et de suppression de vos données sur simple demande via notre formulaire ou par
