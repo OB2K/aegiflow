@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="es" class="dark" data-root="../..">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <meta name="darkreader-lock" />
+  <meta name="color-scheme" content="dark only" />
+  <meta name="theme-color" content="#01030A" />
+
+  <title>Ciberseguridad, Pentesting y Security by Design | AEGIFLOW</title>
+  <meta name="description" content="Pentesting web, de APIs y Active Directory, hardening de sistemas, protección de claves API y arquitecturas Security by Design para sus proyectos de IA y software." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Ousmane Barry — AEGIFLOW" />
+  <meta name="application-name" content="AEGIFLOW" />
+
+  <!-- Canonical, LLMs Context & Hreflang Multilingüe SEO -->
+  <link rel="canonical" href="https://www.aegiflow.eu/es/servicios/ciberseguridad" />
+  <link rel="llms" type="text/plain" href="https://www.aegiflow.eu/llms.txt" />
+  <link rel="alternate" hreflang="fr" href="https://www.aegiflow.eu/services/cybersecurite" />
+  <link rel="alternate" hreflang="en" href="https://www.aegiflow.eu/en/services/cybersecurity" />
+  <link rel="alternate" hreflang="es" href="https://www.aegiflow.eu/es/servicios/ciberseguridad" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aegiflow.eu/services/cybersecurite" />
+
+  <!-- Open Graph / LinkedIn / Redes Sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.aegiflow.eu/es/servicios/ciberseguridad" />
+  <meta property="og:site_name" content="AEGIFLOW" />
+  <meta property="og:title" content="Ciberseguridad, Pentesting y Security by Design | AEGIFLOW" />
+  <meta property="og:description" content="Pentesting web, de APIs y Active Directory, hardening de sistemas, protección de claves API y arquitecturas Security by Design para sus proyectos de IA y software." />
+  <meta property="og:image" content="https://www.aegiflow.eu/assets/img/aegiflow-og-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ciberseguridad, Pentesting y Security by Design | AEGIFLOW" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ciberseguridad, Pentesting y Security by Design | AEGIFLOW" />
+  <meta name="twitter:description" content="Pentesting web, de APIs y Active Directory, hardening de sistemas, protección de claves API y arquitecturas Security by Design para sus proyectos de IA y software." />
+  <meta name="twitter:image" content="https://www.aegiflow.eu/assets/img/aegiflow-og-1200x630.jpg" />
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../../assets/img/aegiflow-logo-512.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../assets/img/aegiflow-logo-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
+  <link rel="manifest" href="../../site.webmanifest" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../assets/css/aegiflow.css?v=b5a706eb" />
+
+  <!-- Schema.org JSON-LD Entity Graph -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "ProfessionalService",
+        "SoftwareCompany"
+      ],
+      "@id": "https://www.aegiflow.eu/#organization",
+      "name": "AEGIFLOW",
+      "legalName": "AEGIFLOW",
+      "alternateName": [
+        "Aegiflow",
+        "AEGIFLOW.eu",
+        "aegiflow.eu"
+      ],
+      "url": "https://www.aegiflow.eu/",
+      "hasMap": "https://maps.app.goo.gl/qG3TxPJqUghXvXKC9",
+      "slogan": "Automate Smarter. Secure by Design.",
+      "description": "AEGIFLOW es una firma de ingeniería especializada en agentes de IA y LLMs a medida, automatización de procesos por API, desarrollo de software Web, Móvil y PC, y ciberseguridad bajo el principio Security by Design.",
+      "email": "contact@aegiflow.eu",
+      "priceRange": "$$$",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.aegiflow.eu/#logo",
+        "url": "https://www.aegiflow.eu/assets/img/aegiflow-logo-512.png",
+        "contentUrl": "https://www.aegiflow.eu/assets/img/aegiflow-logo-512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "AEGIFLOW"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.aegiflow.eu/assets/img/aegiflow-og-1200x630.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "founder": {
+        "@id": "https://www.aegiflow.eu/#founder"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/aegiflow",
+        "https://maps.app.goo.gl/qG3TxPJqUghXvXKC9",
+        "https://www.linkedin.com/in/ousmane-barry"
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "European Union"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "availableLanguage": [
+        "fr",
+        "en",
+        "es"
+      ],
+      "knowsAbout": [
+        "Agentes de IA",
+        "Sistemas multi-agente",
+        "Modelos de lenguaje (LLM)",
+        "RAG",
+        "Automatización de procesos",
+        "Integración de APIs",
+        "Desarrollo web",
+        "Aplicaciones móviles",
+        "Software de escritorio",
+        "Ciberseguridad",
+        "Pentesting",
+        "Hardening de sistemas",
+        "Security by Design",
+        "RGPD"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "contact@aegiflow.eu",
+        "url": "https://www.aegiflow.eu/es#contact",
+        "availableLanguage": [
+          "fr",
+          "en",
+          "es"
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios AEGIFLOW",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Agentes de IA y LLMs",
+              "description": "Diseño de agentes de IA, sistemas multi-agente y LLMs privados (RAG) para automatizar documentos, soporte y operaciones. Cero fugas de datos, conforme al RGPD.",
+              "url": "https://www.aegiflow.eu/es/servicios/agentes-ia"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automatización y APIs",
+              "description": "Automatización de workflows, interconexión de APIs y sincronización de CRM, ERP y bases de datos. Flujos robustos, seguros y mantenibles para pymes y empresas.",
+              "url": "https://www.aegiflow.eu/es/servicios/automatizacion"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Desarrollo Web, Móvil y PC",
+              "description": "Desarrollo de aplicaciones web, apps móviles iOS y Android y software de escritorio a medida, seguros desde el diseño, con IA y sus APIs integradas.",
+              "url": "https://www.aegiflow.eu/es/servicios/desarrollo-software"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ciberseguridad y Pentest",
+              "description": "Pentesting web, de APIs y Active Directory, hardening de sistemas, protección de claves API y arquitecturas Security by Design para sus proyectos de IA y software.",
+              "url": "https://www.aegiflow.eu/es/servicios/ciberseguridad"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.aegiflow.eu/#founder",
+      "name": "Ousmane Barry",
+      "jobTitle": "Fundador — Ingeniero de IA, Automatización y Ciberseguridad",
+      "worksFor": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "url": "https://www.linkedin.com/in/ousmane-barry",
+      "sameAs": [
+        "https://www.linkedin.com/in/ousmane-barry"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.aegiflow.eu/#website",
+      "url": "https://www.aegiflow.eu/",
+      "name": "AEGIFLOW",
+      "alternateName": [
+        "Aegiflow",
+        "AEGIFLOW.eu",
+        "aegiflow.eu"
+      ],
+      "publisher": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "inLanguage": [
+        "fr",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.aegiflow.eu/es/servicios/ciberseguridad#webpage",
+      "url": "https://www.aegiflow.eu/es/servicios/ciberseguridad",
+      "name": "Ciberseguridad, Pentesting y Security by Design | AEGIFLOW",
+      "description": "Pentesting web, de APIs y Active Directory, hardening de sistemas, protección de claves API y arquitecturas Security by Design para sus proyectos de IA y software.",
+      "isPartOf": {
+        "@id": "https://www.aegiflow.eu/#website"
+      },
+      "about": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.aegiflow.eu/es/servicios/ciberseguridad#service",
+      "name": "Ciberseguridad ofensiva y defensiva, Security by Design",
+      "serviceType": "Ciberseguridad y Pentest",
+      "description": "Pentesting web, de APIs y Active Directory, hardening de sistemas, protección de claves API y arquitecturas Security by Design para sus proyectos de IA y software.",
+      "url": "https://www.aegiflow.eu/es/servicios/ciberseguridad",
+      "provider": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "availableLanguage": [
+        "fr",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.aegiflow.eu/es/servicios/ciberseguridad#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.aegiflow.eu/es"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ciberseguridad y Pentest",
+          "item": "https://www.aegiflow.eu/es/servicios/ciberseguridad"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.aegiflow.eu/es/servicios/ciberseguridad#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es Security by Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es el principio de integrar la seguridad desde la fase de diseño de un sistema en lugar de parchearlo después: mínimo privilegio, aislamiento, protección de secretos, validación de entradas y pruebas ofensivas antes de entregar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre una auditoría y un pentest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una auditoría evalúa el cumplimiento y la configuración frente a un estándar. Un pentest simula un ataque real para demostrar qué podría conseguir un atacante. Ambos son complementarios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un pentest puede afectar a mi entorno de producción?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las pruebas se planifican con usted y se rigen por reglas de intervención. Las acciones de riesgo se evitan o se ejecutan en preproducción."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué incluye el informe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un resumen ejecutivo para dirección, el detalle técnico de cada vulnerabilidad con evidencias, su nivel de riesgo y recomendaciones de corrección priorizadas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Aseguran proyectos desarrollados por terceros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Auditamos y aseguramos aplicaciones, APIs, automatizaciones e infraestructuras existentes, con independencia de quién las haya desarrollado."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body id="top">
+  <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+  <header class="navbar" id="main-navbar">
+    <div class="navbar-container">
+      <a href="/es" class="brand" aria-label="AEGIFLOW — Inicio" data-close-nav>
+        <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 8 L84 24 V54 C84 74 50 92 50 92 C50 92 16 74 16 54 V24 L50 8 Z" stroke="#00F0FF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 76 L50 26 L68 76" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M35 52 C12 36, 12 72, 36 58 L64 46 C88 34, 88 68, 65 54" stroke="#00F0FF" stroke-width="4.5" stroke-linecap="round" />
+          <circle cx="50" cy="52" r="5.5" fill="#FFFFFF" />
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">AEGIFLOW</span>
+          <span class="brand-sub">IA + Automatización + Seguridad</span>
+        </div>
+        <div class="brand-badge" aria-hidden="true">
+          <span class="status-indicator"></span>
+          <span>Security by Design</span>
+        </div>
+      </a>
+
+      <nav class="nav-dock" aria-label="Navegación principal">
+        <a href="/es/servicios/agentes-ia" class="nav-dock-link">Agentes de IA y LLMs</a>
+        <a href="/es/servicios/automatizacion" class="nav-dock-link">Automatización y APIs</a>
+        <a href="/es/servicios/desarrollo-software" class="nav-dock-link">Desarrollo Web, Móvil y PC</a>
+        <a href="/es/servicios/ciberseguridad" class="nav-dock-link active" aria-current="page">Ciberseguridad y Pentest</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="desktop-lang" role="group" aria-label="Seleccionar idioma">
+          <a href="/services/cybersecurite" hreflang="fr" data-lang-link class="lang-btn">FR</a>
+          <a href="/en/services/cybersecurity" hreflang="en" data-lang-link class="lang-btn">EN</a>
+          <a href="/es/servicios/ciberseguridad" hreflang="es" data-lang-link class="lang-btn active" aria-current="page">ES</a>
+        </div>
+
+        <a href="/es#contact" class="btn-cyan nav-cta-btn">
+          <span>Hablemos de su proyecto</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BACKDROP Y DRAWER MÓVIL / TABLET -->
+  <div id="mobile-nav-backdrop" class="mobile-nav-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-nav" class="mobile-nav" aria-hidden="true" aria-label="Menú móvil" inert>
+    <div>
+      <div class="mobile-nav-header">
+        <span class="mobile-nav-header-tag">AEGIFLOW · MENÚ</span>
+        <span class="mobile-nav-header-sub">Security by Design</span>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="Servicios AEGIFLOW">
+        <a href="/es/servicios/agentes-ia" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">01</span>
+            <div>
+              <div class="mobile-item-title">Agentes de IA y LLMs</div>
+              <div class="mobile-item-sub">Multi-agente, LLMs privados y RAG</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/es/servicios/automatizacion" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">02</span>
+            <div>
+              <div class="mobile-item-title">Automatización y APIs</div>
+              <div class="mobile-item-sub">Workflows, CRM, ERP y datos</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/es/servicios/desarrollo-software" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">03</span>
+            <div>
+              <div class="mobile-item-title">Desarrollo Web, Móvil y PC</div>
+              <div class="mobile-item-sub">Aplicaciones, SaaS, apps y escritorio</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/es/servicios/ciberseguridad" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">04</span>
+            <div>
+              <div class="mobile-item-title">Ciberseguridad y Pentest</div>
+              <div class="mobile-item-sub">Pentest, Hardening y Security by Design</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/es#offres" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">05</span>
+            <div>
+              <div class="mobile-item-title">Soluciones</div>
+              <div class="mobile-item-sub">Formatos de intervención</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/es#fondateur" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">06</span>
+            <div>
+              <div class="mobile-item-title">Sobre nosotros</div>
+              <div class="mobile-item-sub">Ousmane Barry y Trayectoria</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </div>
+
+    <div>
+      <div class="mobile-lang-box">
+        <span class="mobile-lang-title">Idioma del sitio / Language :</span>
+        <div class="mobile-lang-grid" role="group" aria-label="Seleccionar idioma">
+          <a href="/services/cybersecurite" hreflang="fr" data-lang-link class="mobile-lang-btn">
+            <span>FR</span>
+            <span class="sub">Français</span>
+          </a>
+          <a href="/en/services/cybersecurity" hreflang="en" data-lang-link class="mobile-lang-btn">
+            <span>EN</span>
+            <span class="sub">English</span>
+          </a>
+          <a href="/es/servicios/ciberseguridad" hreflang="es" data-lang-link class="mobile-lang-btn active" aria-current="page">
+            <span>ES</span>
+            <span class="sub">Español</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/es#contact" class="btn-cyan mobile-cta-btn" data-close-nav>
+        Hablemos de su proyecto
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- SERVICE HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <ol>
+              <li><a href="/es">Inicio</a></li>
+              <li><span aria-current="page">Ciberseguridad y Pentest</span></li>
+            </ol>
+          </nav>
+
+          <div class="glass-pill">
+            <strong>AEGIFLOW</strong>
+            <span>· Ciberseguridad y Security by Design</span>
+          </div>
+
+          <h1 class="hero-title is-service">Ciberseguridad ofensiva y defensiva, Security by Design</h1>
+
+          <p class="hero-subtitle">Nacido de la ciberseguridad ofensiva, el enfoque de AEGIFLOW protege sus aplicaciones, automatizaciones y agentes de IA desde el diseño: pruebas de intrusión, hardening de sistemas y protección estricta de sus secretos.</p>
+
+          <div class="hero-cta-group">
+            <a href="/es#contact" class="btn-cyan">Hablemos de su proyecto</a>
+            <a href="#livrables" class="btn-outline">Nuestros servicios de seguridad</a>
+          </div>
+
+          <div class="hero-scope">
+            <span class="scope-dot" aria-hidden="true"></span>
+            <span>Francia · España · Internacional</span>
+          </div>
+        </div>
+
+        <aside class="orbital-panel" aria-label="Puntos clave">
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <span class="orbital-num">01</span>
+            </div>
+            <div class="orbital-text">
+              <strong class="orbital-title">Pentest web, API y AD</strong>
+              <p>Sus vulnerabilidades detectadas antes que los atacantes.</p>
+            </div>
+          </div>
+
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <span class="orbital-num">02</span>
+            </div>
+            <div class="orbital-text">
+              <strong class="orbital-title">Hardening</strong>
+              <p>Sistemas Linux, Windows y cloud endurecidos según buenas prácticas.</p>
+            </div>
+          </div>
+
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <span class="orbital-num">03</span>
+            </div>
+            <div class="orbital-text">
+              <strong class="orbital-title">Seguridad para IA</strong>
+              <p>Agentes y automatizaciones protegidos frente a nuevos vectores.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TECH TICKER -->
+    <div class="ticker" aria-label="Ecosistema técnico">
+      <div class="ticker-track">
+        <span class="ticker-item">OWASP Top 10</span><span class="ticker-item">OWASP API Security</span><span class="ticker-item">Burp Suite</span><span class="ticker-item">Nmap</span><span class="ticker-item">Active Directory</span><span class="ticker-item">BloodHound</span><span class="ticker-item">CIS Benchmarks</span><span class="ticker-item">Linux Hardening</span><span class="ticker-item">Windows Hardening</span><span class="ticker-item">Secrets Management</span><span class="ticker-item">RBAC</span><span class="ticker-item">RGPD / GDPR</span><span class="ticker-item">OWASP Top 10</span><span class="ticker-item">OWASP API Security</span><span class="ticker-item">Burp Suite</span><span class="ticker-item">Nmap</span><span class="ticker-item">Active Directory</span><span class="ticker-item">BloodHound</span><span class="ticker-item">CIS Benchmarks</span><span class="ticker-item">Linux Hardening</span><span class="ticker-item">Windows Hardening</span><span class="ticker-item">Secrets Management</span><span class="ticker-item">RBAC</span><span class="ticker-item">RGPD / GDPR</span>
+      </div>
+    </div>
+
+    <!-- 1. DELIVERABLES -->
+    <section id="livrables" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Entregables</span>
+          <h2 class="section-title">Nuestros servicios de seguridad</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal" style="--d:0ms">
+            <div>
+              <span class="card-num">01</span>
+              <h3>Pentesting web y de APIs</h3>
+              <p>Evaluación ofensiva de sus aplicaciones y APIs según OWASP, con pruebas de explotación y plan de remediación priorizado.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:70ms">
+            <div>
+              <span class="card-num">02</span>
+              <h3>Auditoría de Active Directory y red interna</h3>
+              <p>Identificación de rutas de ataque, privilegios excesivos y configuraciones inseguras en su red interna.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:140ms">
+            <div>
+              <span class="card-num">03</span>
+              <h3>Hardening de sistemas</h3>
+              <p>Endurecimiento de servidores Linux y Windows, puestos de trabajo y entornos cloud según estándares reconocidos.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:0ms">
+            <div>
+              <span class="card-num">04</span>
+              <h3>Gestión de secretos y accesos</h3>
+              <p>Bóvedas de secretos, rotación de claves API, mínimo privilegio y control de acceso basado en roles (RBAC).</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:70ms">
+            <div>
+              <span class="card-num">05</span>
+              <h3>Seguridad de agentes de IA y automatizaciones</h3>
+              <p>Protección frente a inyección de prompts, fuga de datos y abuso de webhooks o conectores.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:140ms">
+            <div>
+              <span class="card-num">06</span>
+              <h3>Consultoría Security by Design</h3>
+              <p>Revisión de arquitectura, modelado de amenazas y requisitos de seguridad integrados desde el inicio de sus proyectos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CONCRETE USE CASES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Casos de uso</span>
+          <h2 class="section-title">Ejemplos de intervenciones</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal" style="--d:0ms">
+            <div>
+              <span class="card-num">A</span>
+              <h3>Pentest previo a producción</h3>
+              <p>Una aplicación o API probada en condiciones reales antes de su lanzamiento, con verificación de las correcciones.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:70ms">
+            <div>
+              <span class="card-num">B</span>
+              <h3>Aseguramiento de automatizaciones</h3>
+              <p>Inventario de flujos, claves API y webhooks, seguido de la eliminación de exposiciones.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:140ms">
+            <div>
+              <span class="card-num">C</span>
+              <h3>Hardening de infraestructura</h3>
+              <p>Reducción de la superficie de ataque de servidores y cuentas privilegiadas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 4-STEP METHODOLOGY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Metodología</span>
+          <h2 class="section-title">Un método claro en 4 etapas, con visibilidad total.</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal" style="--d:0ms">
+            <h3>Alcance y reglas de intervención</h3>
+            <p>Definición de objetivos, perímetro y marco legal de la prueba.</p>
+          </li>
+          <li class="step reveal" style="--d:70ms">
+            <h3>Análisis y pruebas ofensivas</h3>
+            <p>Reconocimiento, búsqueda de vulnerabilidades y explotación controlada.</p>
+          </li>
+          <li class="step reveal" style="--d:140ms">
+            <h3>Informe y remediación</h3>
+            <p>Informe ejecutivo y técnico claro, priorización de riesgos y apoyo en la corrección.</p>
+          </li>
+          <li class="step reveal" style="--d:210ms">
+            <h3>Re-test y seguimiento</h3>
+            <p>Verificación de los parches aplicados y controles periódicos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. SECURITY BY DESIGN + TECH STACK -->
+    <section class="section">
+      <div class="container">
+        <div class="secure-panel">
+          <div class="reveal">
+            <span class="section-tag">Security by Design</span>
+            <h2 class="section-title">¿Por qué un enfoque basado en seguridad ofensiva?</h2>
+            <p class="section-desc">Para defender eficazmente un sistema hay que conocer cómo se ataca en la realidad.</p>
+          </div>
+
+          <div class="compare-col aegiflow reveal" style="--d:80ms">
+            <div class="compare-header">
+              <h3>Estándar AEGIFLOW</h3>
+              <span class="tag-safe">Security by Design</span>
+            </div>
+            <ul class="compare-list">
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>Probamos sus sistemas como lo haría un atacante real, no con una simple lista de verificación.</span>
+              </li>
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>Cada recomendación se prioriza según su impacto real en el negocio.</span>
+              </li>
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>Aplicamos el mismo nivel de exigencia a todo lo que entregamos: IA, automatizaciones y software.</span>
+              </li>
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>Intervenciones acotadas, confidenciales y conformes al RGPD.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top: 3.5rem; margin-bottom: 1.5rem;">
+          <span class="section-tag">Ecosistema técnico</span>
+          <h2 class="section-title" style="font-size: clamp(1.3rem, 3vw, 1.75rem);">Tecnologías y estándares que dominamos</h2>
+        </div>
+
+        <div class="chips reveal">
+          <span class="chip">OWASP Top 10</span>
+          <span class="chip">OWASP API Security</span>
+          <span class="chip">Burp Suite</span>
+          <span class="chip">Nmap</span>
+          <span class="chip">Active Directory</span>
+          <span class="chip">BloodHound</span>
+          <span class="chip">CIS Benchmarks</span>
+          <span class="chip">Linux Hardening</span>
+          <span class="chip">Windows Hardening</span>
+          <span class="chip">Secrets Management</span>
+          <span class="chip">RBAC</span>
+          <span class="chip">RGPD / GDPR</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SERVICE FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>¿Qué es Security by Design?</summary>
+            <div class="faq-answer">Es el principio de integrar la seguridad desde la fase de diseño de un sistema en lugar de parchearlo después: mínimo privilegio, aislamiento, protección de secretos, validación de entradas y pruebas ofensivas antes de entregar.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué diferencia hay entre una auditoría y un pentest?</summary>
+            <div class="faq-answer">Una auditoría evalúa el cumplimiento y la configuración frente a un estándar. Un pentest simula un ataque real para demostrar qué podría conseguir un atacante. Ambos son complementarios.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Un pentest puede afectar a mi entorno de producción?</summary>
+            <div class="faq-answer">Las pruebas se planifican con usted y se rigen por reglas de intervención. Las acciones de riesgo se evitan o se ejecutan en preproducción.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Qué incluye el informe?</summary>
+            <div class="faq-answer">Un resumen ejecutivo para dirección, el detalle técnico de cada vulnerabilidad con evidencias, su nivel de riesgo y recomendaciones de corrección priorizadas.</div>
+          </details>
+          <details class="faq-item">
+            <summary>¿Aseguran proyectos desarrollados por terceros?</summary>
+            <div class="faq-answer">Sí. Auditamos y aseguramos aplicaciones, APIs, automatizaciones e infraestructuras existentes, con independencia de quién las haya desarrollado.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CTA BAND + RELATED SERVICES -->
+    <section class="section" style="border-bottom: none;">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>¿Quiere saber qué vería un atacante en su sistema?</h2>
+            <p>Cuéntenos su perímetro: aplicación, API, automatizaciones o infraestructura.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="/es#contact" class="btn-cyan">Hablemos de su proyecto</a>
+            <a href="https://www.linkedin.com/in/ousmane-barry" target="_blank" rel="noopener noreferrer" class="btn-outline">Escribir en LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top: 3.75rem; margin-bottom: 1.5rem;">
+          <span class="section-tag">Especialidades complementarias</span>
+          <h2 class="section-title" style="font-size: clamp(1.35rem, 3.2vw, 1.85rem);">Nuestros otros servicios</h2>
+        </div>
+
+        <div class="related-grid reveal">
+          <a href="/es/servicios/agentes-ia" class="related-card">
+            <div>
+              <span>Agentes de IA y LLMs</span>
+              <small>Multi-agente, LLMs privados y RAG</small>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="/es/servicios/automatizacion" class="related-card">
+            <div>
+              <span>Automatización y APIs</span>
+              <small>Workflows, CRM, ERP y datos</small>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="/es/servicios/desarrollo-software" class="related-card">
+            <div>
+              <span>Desarrollo Web, Móvil y PC</span>
+              <small>Aplicaciones, SaaS, apps y escritorio</small>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTONES FLOTANTES DE ACCIÓN RÁPIDA (FAB) -->
+  <aside class="floating-actions" aria-label="Acciones rápidas">
+    <a href="/es#contact" id="fab-contact" class="fab-btn fab-contact" aria-label="Hablar sobre su proyecto" title="Hablar sobre su proyecto">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="fab-pulse" aria-hidden="true"></span>
+    </a>
+
+    <button type="button" id="fab-back-to-top" class="fab-btn fab-top" aria-label="Subir al inicio" title="Subir al inicio">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- FOOTER MULTILINGÜE CON ENLACES INTERNOS SEO -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-row">
+            <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 8 L84 24 V54 C84 74 50 92 50 92 C50 92 16 74 16 54 V24 L50 8 Z" stroke="#00F0FF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 76 L50 26 L68 76" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M35 52 C12 36, 12 72, 36 58 L64 46 C88 34, 88 68, 65 54" stroke="#00F0FF" stroke-width="4.5" stroke-linecap="round" />
+          <circle cx="50" cy="52" r="5.5" fill="#FFFFFF" />
+        </svg>
+            <span class="footer-tagline">AEGIFLOW · Automate Smarter. Secure by Design.</span>
+          </div>
+          <p class="footer-desc">Ingeniería de IA a medida, automatización de procesos, desarrollo de software Web, Móvil y PC y ciberseguridad. Francia, España e Internacional.</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Servicios</div>
+          <ul>
+            <li><a href="/es/servicios/agentes-ia">Agentes de IA y LLMs</a></li>
+            <li><a href="/es/servicios/automatizacion">Automatización y APIs</a></li>
+            <li><a href="/es/servicios/desarrollo-software">Desarrollo Web, Móvil y PC</a></li>
+            <li><a href="/es/servicios/ciberseguridad">Ciberseguridad y Pentest</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">AEGIFLOW</div>
+          <ul>
+            <li><a href="/es#cas-usage">Casos de uso</a></li>
+            <li><a href="/es#comparatif">Por qué elegirnos</a></li>
+            <li><a href="/es#offres">Soluciones</a></li>
+            <li><a href="/es#fondateur">Sobre nosotros</a></li>
+            <li><a href="/es#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Contacto</div>
+          <ul>
+            <li><a href="/es#contact">Formulario seguro</a></li>
+            <li><a href="mailto:contact@aegiflow.eu">contact@aegiflow.eu</a></li>
+            <li><a href="https://www.linkedin.com/company/aegiflow" target="_blank" rel="noopener noreferrer">LinkedIn AEGIFLOW</a></li>
+            <li><a href="https://www.linkedin.com/in/ousmane-barry" target="_blank" rel="noopener noreferrer">LinkedIn Ousmane Barry</a></li>
+            <li><a href="https://maps.app.goo.gl/qG3TxPJqUghXvXKC9" target="_blank" rel="noopener noreferrer">Google Maps · AEGIFLOW</a></li>
+            <li><a href="/" hreflang="fr" data-lang-link>Français (FR)</a></li>
+            <li><a href="/en" hreflang="en" data-lang-link>English (EN)</a></li>
+            <li><a href="/es" hreflang="es" data-lang-link>Español (ES)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AEGIFLOW — Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <button type="button" class="footer-legal-btn" data-modal-open="modal-legal">Aviso legal</button>
+          <button type="button" class="footer-legal-btn" data-modal-open="modal-privacy">Política de privacidad</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL POPUP 1: MENTIONS LÉGALES -->
+  <div id="modal-legal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="legal-title">
+    <div class="modal-box">
+      <button type="button" class="modal-close" data-modal-close aria-label="Cerrar">✕</button>
+      <h3 id="legal-title">Aviso Legal</h3>
+      <div class="modal-content">
+        <h4>1. Editor del sitio web</h4>
+        <p>El sitio web www.aegiflow.eu está editado por AEGIFLOW (representado por su fundador Ousmane Barry, empresario individual). Contacto directo: contact@aegiflow.eu, mediante el formulario del sitio o vía LinkedIn: linkedin.com/in/ousmane-barry.</p>
+        <h4>2. Alojamiento web</h4>
+        <p>Alojamiento web: Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.</p>
+        <h4>3. Propiedad intelectual</h4>
+        <p>Todos los elementos gráficos, textos, códigos, logotipos y arquitecturas presentes en www.aegiflow.eu son propiedad exclusiva de AEGIFLOW. Queda prohibida su reproducción sin autorización previa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POPUP 2: POLITIQUE DE CONFIDENTIALITÉ (RGPD) -->
+  <div id="modal-privacy" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="priv-title">
+    <div class="modal-box">
+      <button type="button" class="modal-close" data-modal-close aria-label="Cerrar">✕</button>
+      <h3 id="priv-title">Política de Privacidad (RGPD)</h3>
+      <div class="modal-content">
+        <h4>1. Recogida mínima de datos</h4>
+        <p>AEGIFLOW recoge únicamente la información estrictamente necesaria enviada voluntariamente mediante el formulario de contacto (nombre, email profesional, empresa, descripción del proyecto). No se utilizan cookies publicitarias ni rastreadores. Solo su preferencia de idioma puede guardarse localmente en su navegador.</p>
+        <h4>2. Finalidad y tratamiento seguro</h4>
+        <p>Los datos enviados a través del formulario se tratan de forma cifrada y confidencial únicamente para dar respuesta a su solicitud, mediante nuestro proveedor de correo transaccional (Brevo). Sus datos nunca se venden, alquilan ni ceden a terceros.</p>
+        <h4>3. Sus derechos (Acceso, rectificación, supresión)</h4>
+        <p>Conforme al Reglamento General de Protección de Datos (RGPD), puede ejercer sus derechos de acceso, rectificación o eliminación de sus datos en cualquier momento escribiendo a contact@aegiflow.eu, a través de nuestro formulario o por LinkedIn.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/aegiflow.js?v=8f95104d" defer></script>
+</body>
+
+</html>

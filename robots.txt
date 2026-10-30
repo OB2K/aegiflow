@@ -5,89 +5,95 @@
 # Sitemap: https://www.aegiflow.eu/sitemap.xml
 # ==============================================================================
 
-# Search Engines & Standard Crawlers (Allow All)
 User-agent: *
 Allow: /
 Disallow: /api/
 
-# OpenAI Crawlers & User-Agents
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /api/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
 
-# Anthropic (Claude) Crawlers
 User-agent: ClaudeBot
 Allow: /
+Disallow: /api/
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /api/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /api/
 
-# Google Crawlers
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
 
 User-agent: Googlebot-Mobile
 Allow: /
+Disallow: /api/
 
 User-agent: Googlebot-Image
 Allow: /
+Disallow: /api/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /api/
 
-# Perplexity AI Crawler
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
 
-# Microsoft Bing Crawlers
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
 
 User-agent: BingPreview
 Allow: /
+Disallow: /api/
 
-# Apple Crawlers
 User-agent: Applebot
 Allow: /
+Disallow: /api/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /api/
 
-# Other Major AI, Social & Search Crawlers
 User-agent: cohere-ai
 Allow: /
+Disallow: /api/
 
 User-agent: Bytespider
 Allow: /
+Disallow: /api/
 
 User-agent: meta-externalagent
 Allow: /
+Disallow: /api/
 
 User-agent: FacebookBot
 Allow: /
+Disallow: /api/
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /api/
 
 User-agent: LinkedInBot
 Allow: /
+Disallow: /api/
 
 User-agent: DuckDuckBot
 Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# LLM Specifications & Sitemap location
+Disallow: /api/
 Sitemap: https://www.aegiflow.eu/sitemap.xml

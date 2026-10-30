@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" data-root="../..">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <meta name="darkreader-lock" />
+  <meta name="color-scheme" content="dark only" />
+  <meta name="theme-color" content="#01030A" />
+
+  <title>Custom AI Agents &amp; LLM Development for Business | AEGIFLOW</title>
+  <meta name="description" content="Design of AI agents, multi-agent systems and private LLMs (RAG) to automate documents, support and operations. Zero data leakage, GDPR compliant." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Ousmane Barry — AEGIFLOW" />
+  <meta name="application-name" content="AEGIFLOW" />
+
+  <!-- Canonical, LLMs Context & Hreflang Multilingüe SEO -->
+  <link rel="canonical" href="https://www.aegiflow.eu/en/services/ai-agents" />
+  <link rel="llms" type="text/plain" href="https://www.aegiflow.eu/llms.txt" />
+  <link rel="alternate" hreflang="fr" href="https://www.aegiflow.eu/services/agents-ia" />
+  <link rel="alternate" hreflang="en" href="https://www.aegiflow.eu/en/services/ai-agents" />
+  <link rel="alternate" hreflang="es" href="https://www.aegiflow.eu/es/servicios/agentes-ia" />
+  <link rel="alternate" hreflang="x-default" href="https://www.aegiflow.eu/services/agents-ia" />
+
+  <!-- Open Graph / LinkedIn / Redes Sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.aegiflow.eu/en/services/ai-agents" />
+  <meta property="og:site_name" content="AEGIFLOW" />
+  <meta property="og:title" content="Custom AI Agents &amp; LLM Development for Business | AEGIFLOW" />
+  <meta property="og:description" content="Design of AI agents, multi-agent systems and private LLMs (RAG) to automate documents, support and operations. Zero data leakage, GDPR compliant." />
+  <meta property="og:image" content="https://www.aegiflow.eu/assets/img/aegiflow-og-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Custom AI Agents &amp; LLM Development for Business | AEGIFLOW" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Custom AI Agents &amp; LLM Development for Business | AEGIFLOW" />
+  <meta name="twitter:description" content="Design of AI agents, multi-agent systems and private LLMs (RAG) to automate documents, support and operations. Zero data leakage, GDPR compliant." />
+  <meta name="twitter:image" content="https://www.aegiflow.eu/assets/img/aegiflow-og-1200x630.jpg" />
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../../assets/img/aegiflow-logo-512.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../assets/img/aegiflow-logo-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
+  <link rel="manifest" href="../../site.webmanifest" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../assets/css/aegiflow.css?v=b5a706eb" />
+
+  <!-- Schema.org JSON-LD Entity Graph -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "ProfessionalService",
+        "SoftwareCompany"
+      ],
+      "@id": "https://www.aegiflow.eu/#organization",
+      "name": "AEGIFLOW",
+      "legalName": "AEGIFLOW",
+      "alternateName": [
+        "Aegiflow",
+        "AEGIFLOW.eu",
+        "aegiflow.eu"
+      ],
+      "url": "https://www.aegiflow.eu/",
+      "hasMap": "https://maps.app.goo.gl/qG3TxPJqUghXvXKC9",
+      "slogan": "Automate Smarter. Secure by Design.",
+      "description": "AEGIFLOW is an engineering firm specialized in custom AI agents and LLMs, API-driven process automation, Web, Mobile and Desktop software development, and Security by Design cybersecurity.",
+      "email": "contact@aegiflow.eu",
+      "priceRange": "$$$",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.aegiflow.eu/#logo",
+        "url": "https://www.aegiflow.eu/assets/img/aegiflow-logo-512.png",
+        "contentUrl": "https://www.aegiflow.eu/assets/img/aegiflow-logo-512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "AEGIFLOW"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.aegiflow.eu/assets/img/aegiflow-og-1200x630.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "founder": {
+        "@id": "https://www.aegiflow.eu/#founder"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/aegiflow",
+        "https://maps.app.goo.gl/qG3TxPJqUghXvXKC9",
+        "https://www.linkedin.com/in/ousmane-barry"
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "European Union"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "availableLanguage": [
+        "fr",
+        "en",
+        "es"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "Multi-agent systems",
+        "Large language models (LLM)",
+        "Retrieval-augmented generation (RAG)",
+        "Process automation",
+        "API integration",
+        "Web development",
+        "Mobile app development",
+        "Desktop software",
+        "Cybersecurity",
+        "Penetration testing",
+        "System hardening",
+        "Security by Design",
+        "GDPR"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "contact@aegiflow.eu",
+        "url": "https://www.aegiflow.eu/en#contact",
+        "availableLanguage": [
+          "fr",
+          "en",
+          "es"
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AEGIFLOW Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Agents & LLMs",
+              "description": "Design of AI agents, multi-agent systems and private LLMs (RAG) to automate documents, support and operations. Zero data leakage, GDPR compliant.",
+              "url": "https://www.aegiflow.eu/en/services/ai-agents"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automation & APIs",
+              "description": "Workflow automation, API interconnection and CRM, ERP and database synchronization. Robust, secure and maintainable flows for SMEs and enterprises.",
+              "url": "https://www.aegiflow.eu/en/services/automation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web, Mobile & Desktop Development",
+              "description": "Custom web applications, iOS & Android apps and desktop software, secured by design, with AI and your APIs natively integrated.",
+              "url": "https://www.aegiflow.eu/en/services/software-development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cybersecurity & Pentest",
+              "description": "Web, API and Active Directory penetration testing, system hardening, API key protection and Security by Design architectures for your AI and software projects.",
+              "url": "https://www.aegiflow.eu/en/services/cybersecurity"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.aegiflow.eu/#founder",
+      "name": "Ousmane Barry",
+      "jobTitle": "Founder — AI, Automation & Cybersecurity Engineer",
+      "worksFor": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "url": "https://www.linkedin.com/in/ousmane-barry",
+      "sameAs": [
+        "https://www.linkedin.com/in/ousmane-barry"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.aegiflow.eu/#website",
+      "url": "https://www.aegiflow.eu/",
+      "name": "AEGIFLOW",
+      "alternateName": [
+        "Aegiflow",
+        "AEGIFLOW.eu",
+        "aegiflow.eu"
+      ],
+      "publisher": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "inLanguage": [
+        "fr",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.aegiflow.eu/en/services/ai-agents#webpage",
+      "url": "https://www.aegiflow.eu/en/services/ai-agents",
+      "name": "Custom AI Agents & LLM Development for Business | AEGIFLOW",
+      "description": "Design of AI agents, multi-agent systems and private LLMs (RAG) to automate documents, support and operations. Zero data leakage, GDPR compliant.",
+      "isPartOf": {
+        "@id": "https://www.aegiflow.eu/#website"
+      },
+      "about": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.aegiflow.eu/en/services/ai-agents#service",
+      "name": "Custom AI agents & LLMs, private and secure",
+      "serviceType": "AI Agents & LLMs",
+      "description": "Design of AI agents, multi-agent systems and private LLMs (RAG) to automate documents, support and operations. Zero data leakage, GDPR compliant.",
+      "url": "https://www.aegiflow.eu/en/services/ai-agents",
+      "provider": {
+        "@id": "https://www.aegiflow.eu/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "availableLanguage": [
+        "fr",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.aegiflow.eu/en/services/ai-agents#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.aegiflow.eu/en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Agents & LLMs",
+          "item": "https://www.aegiflow.eu/en/services/ai-agents"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.aegiflow.eu/en/services/ai-agents#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a chatbot and an AI agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A chatbot answers questions. An AI agent reasons, uses tools and takes actions: reading a document, querying a database, creating a CRM record or sending an email, within defined rules and permissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which language models do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We pick the model based on your needs and data sensitivity: commercial models via API (OpenAI, Azure OpenAI, Mistral, Anthropic) configured with no retention, or self-hosted open-source models when data must never leave your infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data used to train the AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our architectures prevent any reuse of your data to train third-party models. Access is isolated, encrypted and logged."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the agent connect to our existing tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our agents integrate with your CRM, ERP, email, document management, SQL/NoSQL databases and internal APIs, with least-privilege permissions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you measure an AI agent’s quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each agent is evaluated on a set of real cases before going live (accuracy, escalation rate, processing time), then continuously monitored to detect drift."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+  <header class="navbar" id="main-navbar">
+    <div class="navbar-container">
+      <a href="/en" class="brand" aria-label="AEGIFLOW — Home" data-close-nav>
+        <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 8 L84 24 V54 C84 74 50 92 50 92 C50 92 16 74 16 54 V24 L50 8 Z" stroke="#00F0FF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 76 L50 26 L68 76" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M35 52 C12 36, 12 72, 36 58 L64 46 C88 34, 88 68, 65 54" stroke="#00F0FF" stroke-width="4.5" stroke-linecap="round" />
+          <circle cx="50" cy="52" r="5.5" fill="#FFFFFF" />
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">AEGIFLOW</span>
+          <span class="brand-sub">AI + Automation + Security</span>
+        </div>
+        <div class="brand-badge" aria-hidden="true">
+          <span class="status-indicator"></span>
+          <span>Security by Design</span>
+        </div>
+      </a>
+
+      <nav class="nav-dock" aria-label="Main navigation">
+        <a href="/en/services/ai-agents" class="nav-dock-link active" aria-current="page">AI Agents &amp; LLMs</a>
+        <a href="/en/services/automation" class="nav-dock-link">Automation &amp; APIs</a>
+        <a href="/en/services/software-development" class="nav-dock-link">Web, Mobile &amp; Desktop Development</a>
+        <a href="/en/services/cybersecurity" class="nav-dock-link">Cybersecurity &amp; Pentest</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="desktop-lang" role="group" aria-label="Choose language">
+          <a href="/services/agents-ia" hreflang="fr" data-lang-link class="lang-btn">FR</a>
+          <a href="/en/services/ai-agents" hreflang="en" data-lang-link class="lang-btn active" aria-current="page">EN</a>
+          <a href="/es/servicios/agentes-ia" hreflang="es" data-lang-link class="lang-btn">ES</a>
+        </div>
+
+        <a href="/en#contact" class="btn-cyan nav-cta-btn">
+          <span>Let's discuss your project</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BACKDROP Y DRAWER MÓVIL / TABLET -->
+  <div id="mobile-nav-backdrop" class="mobile-nav-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobile-nav" class="mobile-nav" aria-hidden="true" aria-label="Mobile menu" inert>
+    <div>
+      <div class="mobile-nav-header">
+        <span class="mobile-nav-header-tag">AEGIFLOW · MENU</span>
+        <span class="mobile-nav-header-sub">Security by Design</span>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="AEGIFLOW Services">
+        <a href="/en/services/ai-agents" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">01</span>
+            <div>
+              <div class="mobile-item-title">AI Agents &amp; LLMs</div>
+              <div class="mobile-item-sub">Multi-agent, private LLMs &amp; RAG</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/en/services/automation" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">02</span>
+            <div>
+              <div class="mobile-item-title">Automation &amp; APIs</div>
+              <div class="mobile-item-sub">Workflows, CRM, ERP &amp; data</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/en/services/software-development" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">03</span>
+            <div>
+              <div class="mobile-item-title">Web, Mobile &amp; Desktop Development</div>
+              <div class="mobile-item-sub">Apps, SaaS, mobile &amp; desktop software</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/en/services/cybersecurity" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">04</span>
+            <div>
+              <div class="mobile-item-title">Cybersecurity &amp; Pentest</div>
+              <div class="mobile-item-sub">Pentest, Hardening &amp; Security by Design</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/en#offres" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">05</span>
+            <div>
+              <div class="mobile-item-title">Solutions</div>
+              <div class="mobile-item-sub">Engagement models</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/en#fondateur" class="mobile-nav-item" data-close-nav>
+          <div class="mobile-item-left">
+            <span class="mobile-item-num">06</span>
+            <div>
+              <div class="mobile-item-title">About</div>
+              <div class="mobile-item-sub">Ousmane Barry &amp; Track Record</div>
+            </div>
+          </div>
+          <span class="mobile-item-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </div>
+
+    <div>
+      <div class="mobile-lang-box">
+        <span class="mobile-lang-title">Site language / Langue :</span>
+        <div class="mobile-lang-grid" role="group" aria-label="Choose language">
+          <a href="/services/agents-ia" hreflang="fr" data-lang-link class="mobile-lang-btn">
+            <span>FR</span>
+            <span class="sub">Français</span>
+          </a>
+          <a href="/en/services/ai-agents" hreflang="en" data-lang-link class="mobile-lang-btn active" aria-current="page">
+            <span>EN</span>
+            <span class="sub">English</span>
+          </a>
+          <a href="/es/servicios/agentes-ia" hreflang="es" data-lang-link class="mobile-lang-btn">
+            <span>ES</span>
+            <span class="sub">Español</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/en#contact" class="btn-cyan mobile-cta-btn" data-close-nav>
+        Let's discuss your project
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- SERVICE HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="/en">Home</a></li>
+              <li><span aria-current="page">AI Agents &amp; LLMs</span></li>
+            </ol>
+          </nav>
+
+          <div class="glass-pill">
+            <strong>AEGIFLOW</strong>
+            <span>· AI Agents &amp; LLMs</span>
+          </div>
+
+          <h1 class="hero-title is-service">Custom AI agents &amp; LLMs, private and secure</h1>
+
+          <p class="hero-subtitle">AEGIFLOW designs AI agents and multi-agent systems that process your documents, answer your teams and execute tasks inside your tools, on private, isolated and GDPR-compliant models.</p>
+
+          <div class="hero-cta-group">
+            <a href="/en#contact" class="btn-cyan">Let's discuss your project</a>
+            <a href="#livrables" class="btn-outline">What we build for you</a>
+          </div>
+
+          <div class="hero-scope">
+            <span class="scope-dot" aria-hidden="true"></span>
+            <span>France · Spain · International</span>
+          </div>
+        </div>
+
+        <aside class="orbital-panel" aria-label="Key points">
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <span class="orbital-num">01</span>
+            </div>
+            <div class="orbital-text">
+              <strong class="orbital-title">Autonomous multi-agents</strong>
+              <p>Specialized agents cooperating to run complete processes.</p>
+            </div>
+          </div>
+
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <span class="orbital-num">02</span>
+            </div>
+            <div class="orbital-text">
+              <strong class="orbital-title">Private LLMs &amp; RAG</strong>
+              <p>Query your internal knowledge without leaving your perimeter.</p>
+            </div>
+          </div>
+
+          <div class="orbital-item">
+            <div class="orbital-icon" aria-hidden="true">
+              <span class="orbital-num">03</span>
+            </div>
+            <div class="orbital-text">
+              <strong class="orbital-title">Zero data leakage</strong>
+              <p>None of your data is used to train third-party models.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TECH TICKER -->
+    <div class="ticker" aria-label="Tech ecosystem">
+      <div class="ticker-track">
+        <span class="ticker-item">Python</span><span class="ticker-item">LangChain</span><span class="ticker-item">LangGraph</span><span class="ticker-item">OpenAI API</span><span class="ticker-item">Azure OpenAI</span><span class="ticker-item">Mistral AI</span><span class="ticker-item">Anthropic Claude</span><span class="ticker-item">Ollama</span><span class="ticker-item">RAG</span><span class="ticker-item">pgvector</span><span class="ticker-item">Qdrant</span><span class="ticker-item">FastAPI</span><span class="ticker-item">Python</span><span class="ticker-item">LangChain</span><span class="ticker-item">LangGraph</span><span class="ticker-item">OpenAI API</span><span class="ticker-item">Azure OpenAI</span><span class="ticker-item">Mistral AI</span><span class="ticker-item">Anthropic Claude</span><span class="ticker-item">Ollama</span><span class="ticker-item">RAG</span><span class="ticker-item">pgvector</span><span class="ticker-item">Qdrant</span><span class="ticker-item">FastAPI</span>
+      </div>
+    </div>
+
+    <!-- 1. DELIVERABLES -->
+    <section id="livrables" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Deliverables</span>
+          <h2 class="section-title">What we build for you</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal" style="--d:0ms">
+            <div>
+              <span class="card-num">01</span>
+              <h3>Business AI agents</h3>
+              <p>Agents that read, decide and act in your tools (CRM, ERP, email, databases) according to precise business rules.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:70ms">
+            <div>
+              <span class="card-num">02</span>
+              <h3>Multi-agent systems</h3>
+              <p>Orchestration of specialized agents (extraction, validation, drafting, control) to automate complex task chains.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:140ms">
+            <div>
+              <span class="card-num">03</span>
+              <h3>Internal assistants (RAG)</h3>
+              <p>An assistant connected to your documents, procedures and knowledge bases that cites its sources and respects user permissions.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:0ms">
+            <div>
+              <span class="card-num">04</span>
+              <h3>AI document processing</h3>
+              <p>Structured extraction from contracts, invoices, emails and PDFs, injected directly into your systems.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:70ms">
+            <div>
+              <span class="card-num">05</span>
+              <h3>LLM integration via API</h3>
+              <p>Secure integration of models (OpenAI, Azure OpenAI, Mistral, Claude or open source) into your existing applications.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:140ms">
+            <div>
+              <span class="card-num">06</span>
+              <h3>Self-hosted LLMs</h3>
+              <p>Open-source models deployed on-premise or on European cloud for your most sensitive data.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CONCRETE USE CASES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Use Cases</span>
+          <h2 class="section-title">Deployment examples</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal" style="--d:0ms">
+            <div>
+              <span class="card-num">A</span>
+              <h3>Automatic inbound email triage</h3>
+              <p>An agent classifies, summarizes and routes every email to the right team, drafts a reply and updates the CRM.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:70ms">
+            <div>
+              <span class="card-num">B</span>
+              <h3>Contract and invoice analysis</h3>
+              <p>Extraction of amounts, dates, clauses and parties, consistency checks and alerts on anomalies.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:140ms">
+            <div>
+              <span class="card-num">C</span>
+              <h3>Support assistant &amp; knowledge base</h3>
+              <p>Your teams get sourced answers from your internal procedures in seconds.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 4-STEP METHODOLOGY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Method</span>
+          <h2 class="section-title">A clear 4-step method, with full visibility.</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal" style="--d:0ms">
+            <h3>Scoping &amp; use cases</h3>
+            <p>Identify high-ROI tasks, available data and security constraints.</p>
+          </li>
+          <li class="step reveal" style="--d:70ms">
+            <h3>Measurable prototype</h3>
+            <p>A first agent tested on your real data, with clear quality metrics.</p>
+          </li>
+          <li class="step reveal" style="--d:140ms">
+            <h3>Secure industrialization</h3>
+            <p>Isolation, secrets management, logging, access control and integration with your tools.</p>
+          </li>
+          <li class="step reveal" style="--d:210ms">
+            <h3>Monitoring &amp; improvement</h3>
+            <p>Response monitoring, continuous evaluation and model updates.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. SECURITY BY DESIGN + TECH STACK -->
+    <section class="section">
+      <div class="container">
+        <div class="secure-panel">
+          <div class="reveal">
+            <span class="section-tag">Security by Design</span>
+            <h2 class="section-title">Powerful AI, with no compromise on your data</h2>
+            <p class="section-desc">An AI agent has access to your data and tools: it must be engineered as a critical component of your information system.</p>
+          </div>
+
+          <div class="compare-col aegiflow reveal" style="--d:80ms">
+            <div class="compare-header">
+              <h3>AEGIFLOW Standard</h3>
+              <span class="tag-safe">Security by Design</span>
+            </div>
+            <ul class="compare-list">
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>Private models or APIs configured with no retention or training on your data.</span>
+              </li>
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>Isolation per client, department and role (RBAC), with access logging.</span>
+              </li>
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>Protection against prompt injection and sensitive data leakage.</span>
+              </li>
+              <li>
+                <span class="icon-ok" aria-hidden="true">✓</span>
+                <span>European hosting available and documented GDPR compliance.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top: 3.5rem; margin-bottom: 1.5rem;">
+          <span class="section-tag">Tech ecosystem</span>
+          <h2 class="section-title" style="font-size: clamp(1.3rem, 3vw, 1.75rem);">Technologies and standards we master</h2>
+        </div>
+
+        <div class="chips reveal">
+          <span class="chip">Python</span>
+          <span class="chip">LangChain</span>
+          <span class="chip">LangGraph</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">Azure OpenAI</span>
+          <span class="chip">Mistral AI</span>
+          <span class="chip">Anthropic Claude</span>
+          <span class="chip">Ollama</span>
+          <span class="chip">RAG</span>
+          <span class="chip">pgvector</span>
+          <span class="chip">Qdrant</span>
+          <span class="chip">FastAPI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SERVICE FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>What is the difference between a chatbot and an AI agent?</summary>
+            <div class="faq-answer">A chatbot answers questions. An AI agent reasons, uses tools and takes actions: reading a document, querying a database, creating a CRM record or sending an email, within defined rules and permissions.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Which language models do you use?</summary>
+            <div class="faq-answer">We pick the model based on your needs and data sensitivity: commercial models via API (OpenAI, Azure OpenAI, Mistral, Anthropic) configured with no retention, or self-hosted open-source models when data must never leave your infrastructure.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Is my data used to train the AI?</summary>
+            <div class="faq-answer">No. Our architectures prevent any reuse of your data to train third-party models. Access is isolated, encrypted and logged.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Can the agent connect to our existing tools?</summary>
+            <div class="faq-answer">Yes. Our agents integrate with your CRM, ERP, email, document management, SQL/NoSQL databases and internal APIs, with least-privilege permissions.</div>
+          </details>
+          <details class="faq-item">
+            <summary>How do you measure an AI agent’s quality?</summary>
+            <div class="faq-answer">Each agent is evaluated on a set of real cases before going live (accuracy, escalation rate, processing time), then continuously monitored to detect drift.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CTA BAND + RELATED SERVICES -->
+    <section class="section" style="border-bottom: none;">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>A process you would like to hand over to an AI agent?</h2>
+            <p>Describe it in a few lines: we will tell you what can be automated, at what security level and with what return on investment.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="/en#contact" class="btn-cyan">Let's discuss your project</a>
+            <a href="https://www.linkedin.com/in/ousmane-barry" target="_blank" rel="noopener noreferrer" class="btn-outline">Message on LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top: 3.75rem; margin-bottom: 1.5rem;">
+          <span class="section-tag">Complementary expertise</span>
+          <h2 class="section-title" style="font-size: clamp(1.35rem, 3.2vw, 1.85rem);">Our other services</h2>
+        </div>
+
+        <div class="related-grid reveal">
+          <a href="/en/services/automation" class="related-card">
+            <div>
+              <span>Automation &amp; APIs</span>
+              <small>Workflows, CRM, ERP &amp; data</small>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="/en/services/software-development" class="related-card">
+            <div>
+              <span>Web, Mobile &amp; Desktop Development</span>
+              <small>Apps, SaaS, mobile &amp; desktop software</small>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="/en/services/cybersecurity" class="related-card">
+            <div>
+              <span>Cybersecurity &amp; Pentest</span>
+              <small>Pentest, Hardening &amp; Security by Design</small>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTONES FLOTANTES DE ACCIÓN RÁPIDA (FAB) -->
+  <aside class="floating-actions" aria-label="Quick actions">
+    <a href="/en#contact" id="fab-contact" class="fab-btn fab-contact" aria-label="Discuss your project" title="Discuss your project">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="fab-pulse" aria-hidden="true"></span>
+    </a>
+
+    <button type="button" id="fab-back-to-top" class="fab-btn fab-top" aria-label="Back to top" title="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- FOOTER MULTILINGÜE CON ENLACES INTERNOS SEO -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-row">
+            <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 8 L84 24 V54 C84 74 50 92 50 92 C50 92 16 74 16 54 V24 L50 8 Z" stroke="#00F0FF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M32 76 L50 26 L68 76" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M35 52 C12 36, 12 72, 36 58 L64 46 C88 34, 88 68, 65 54" stroke="#00F0FF" stroke-width="4.5" stroke-linecap="round" />
+          <circle cx="50" cy="52" r="5.5" fill="#FFFFFF" />
+        </svg>
+            <span class="footer-tagline">AEGIFLOW · Automate Smarter. Secure by Design.</span>
+          </div>
+          <p class="footer-desc">Custom AI engineering, process automation, Web, Mobile &amp; Desktop software development and cybersecurity. France, Spain &amp; International.</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Services</div>
+          <ul>
+            <li><a href="/en/services/ai-agents">AI Agents &amp; LLMs</a></li>
+            <li><a href="/en/services/automation">Automation &amp; APIs</a></li>
+            <li><a href="/en/services/software-development">Web, Mobile &amp; Desktop Development</a></li>
+            <li><a href="/en/services/cybersecurity">Cybersecurity &amp; Pentest</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">AEGIFLOW</div>
+          <ul>
+            <li><a href="/en#cas-usage">Use Cases</a></li>
+            <li><a href="/en#comparatif">Why Us</a></li>
+            <li><a href="/en#offres">Solutions</a></li>
+            <li><a href="/en#fondateur">About</a></li>
+            <li><a href="/en#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Contact</div>
+          <ul>
+            <li><a href="/en#contact">Secure contact form</a></li>
+            <li><a href="mailto:contact@aegiflow.eu">contact@aegiflow.eu</a></li>
+            <li><a href="https://www.linkedin.com/company/aegiflow" target="_blank" rel="noopener noreferrer">AEGIFLOW on LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/ousmane-barry" target="_blank" rel="noopener noreferrer">Ousmane Barry on LinkedIn</a></li>
+            <li><a href="https://maps.app.goo.gl/qG3TxPJqUghXvXKC9" target="_blank" rel="noopener noreferrer">Google Maps · AEGIFLOW</a></li>
+            <li><a href="/" hreflang="fr" data-lang-link>Français (FR)</a></li>
+            <li><a href="/en" hreflang="en" data-lang-link>English (EN)</a></li>
+            <li><a href="/es" hreflang="es" data-lang-link>Español (ES)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AEGIFLOW — All rights reserved.</p>
+        <div class="footer-legal-links">
+          <button type="button" class="footer-legal-btn" data-modal-open="modal-legal">Legal Notice</button>
+          <button type="button" class="footer-legal-btn" data-modal-open="modal-privacy">Privacy Policy</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL POPUP 1: MENTIONS LÉGALES -->
+  <div id="modal-legal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="legal-title">
+    <div class="modal-box">
+      <button type="button" class="modal-close" data-modal-close aria-label="Close">✕</button>
+      <h3 id="legal-title">Legal Notice</h3>
+      <div class="modal-content">
+        <h4>1. Site Publisher</h4>
+        <p>The website www.aegiflow.eu is published by AEGIFLOW (represented by its founder Ousmane Barry, sole proprietor). Direct contact: contact@aegiflow.eu, via the website form or LinkedIn: linkedin.com/in/ousmane-barry.</p>
+        <h4>2. Hosting</h4>
+        <p>Website hosting: Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.</p>
+        <h4>3. Intellectual Property</h4>
+        <p>All graphics, texts, code, logos and architectures on www.aegiflow.eu are the exclusive property of AEGIFLOW. Any unauthorized reproduction is strictly prohibited.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POPUP 2: POLITIQUE DE CONFIDENTIALITÉ (RGPD) -->
+  <div id="modal-privacy" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="priv-title">
+    <div class="modal-box">
+      <button type="button" class="modal-close" data-modal-close aria-label="Close">✕</button>
+      <h3 id="priv-title">Privacy Policy (GDPR)</h3>
+      <div class="modal-content">
+        <h4>1. Minimal Data Collection</h4>
+        <p>AEGIFLOW only collects information voluntarily submitted through the contact form (name, work email, company, project scope). No advertising cookies or trackers are used. Only your language preference may be stored locally in your browser.</p>
+        <h4>2. Purpose and Secure Processing</h4>
+        <p>Data submitted via the form is encrypted and processed solely to respond to your inquiry, through our transactional email provider (Brevo). Your data is never sold, rented or shared with third parties.</p>
+        <h4>3. Your Rights (Access, Rectification, Deletion)</h4>
+        <p>Under the GDPR, you have the right to access, modify or delete your personal data at any time by contacting us at contact@aegiflow.eu, via the form or on LinkedIn.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/aegiflow.js?v=8f95104d" defer></script>
+</body>
+
+</html>
